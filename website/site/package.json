@@ -1,0 +1,12 @@
+{
+  "name": "joinelectroniccenter-site",
+  "version": "1.0.0",
+  "description": "Join Electronic Center - appliance store website (static site + Node.js server for visit counter).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

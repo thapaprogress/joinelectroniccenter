@@ -1,0 +1,5 @@
+[samsung] search: samsung+refrigerator
+[samsung] search: samsung+fridge
+[samsung] search: samsung+television
+[samsung] search: samsung+smart+tv
+[samsung] search: samsung+washing+machine

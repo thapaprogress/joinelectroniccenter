@@ -1,0 +1,25 @@
+{
+  "name": "Join Electronic Center — Home Appliances Kathmandu",
+  "short_name": "JEC Store",
+  "description": "378+ Home Appliances with MRP, 0% EMI, Old TV/Fridge Exchange & Free Kathmandu Valley Delivery.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "categories": ["shopping", "lifestyle", "business"],
+  "icons": [
+    {
+      "src": "/photos/AURA/AU12FSWAC.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/photos/Skyworth/55Q6500G.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

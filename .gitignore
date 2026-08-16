@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Next.js build & exports
+.next/
+*/.next/
+web/.next/
+web/out/
+
+# Environment & credentials (protect secrets)
+.env*
+*/.env*
+credentials/
+*.pem
+*.key
+
+# SQLite Database journals / temp
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Large deployment archives (already generated via script)
+deploy/*.zip
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

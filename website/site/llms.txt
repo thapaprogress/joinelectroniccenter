@@ -1,0 +1,84 @@
+# Join Electronic Center - Home Appliance Store, Kathmandu, Nepal
+> Official store + product index for AI agents and AI crawlers.
+
+Store: Join Electronic Center
+Tagline: Kathmandu's Trusted Home Appliance Store
+Address: Samakhushi Chowk, Tokha Road, Kathmandu, Nepal
+Hours: Open daily, 9 AM - 7 PM (NPT)
+Phone: +977-9765985999
+WhatsApp: +9779765985999 (primary), +9851045662 (secondary)
+Delivery: Free local delivery in Kathmandu valley; shipping across Nepal
+Currency: NPR (Nepali Rupee)
+Language: Nepali + English (bilingual service)
+
+## Pages
+- / - Home page (hero, brands, categories, featured products, EMI/exchange offers)
+- /shop.html - All products with filter, search, sort
+- /product.html?model=MODEL - Product detail page (dynamic; each product also has a static page /product-SLUG.html)
+- /llms-full.txt - Full product index: all 378 products (name, model, brand, category, NPR price)
+- /brand.html?brand=NAME - Products by brand
+- /category.html?cat=NAME - Products by category
+- /appliance-finder.html - Find your perfect appliance (budget + family size wizard) + EMI calculator
+- /exchange.html - Old appliance exchange: send photo, get cashback quote on WhatsApp
+- /second-hand.html - Checked, serviced pre-owned appliances (condition grades A/B/C)
+- /blog.html - Appliance buying guides (SEO/AEO). Single post: /blog.html?post=SLUG
+- /posts.json - Store offers and news posts
+- /contact.html - Contact, address, WhatsApp, lead form
+- /about.html - About the store: 20+ years, what we sell, why customers trust us
+- /warranty.html - Warranty, delivery and return policies
+
+## Blog Posts
+- /blog.html?post=how-to-choose-a-refrigerator-in-nepal - How to choose a refrigerator in Nepal (size, energy, brands)
+- /blog.html?post=emi-on-appliances-in-nepal-explained - EMI on appliances in Nepal explained
+- /blog.html?post=old-tv-exchange-cashback-nepal - Old TV exchange cashback guide
+- /blog.html?post=air-cooler-vs-air-conditioner-nepal - Air cooler vs air conditioner in Nepal
+- /blog.html?post=buying-a-second-hand-appliance-in-nepal-what-to-check - Second-hand appliance buying guide (grading, checks, discounts)
+- /blog.html?post=where-to-buy-a-washing-machine-in-kathmandu - Washing machine prices in Kathmandu (top load vs front load)
+- /blog.html?post=tv-price-in-nepal-2026 - TV price in Nepal 2026 (smart, LED, 4K UHD prices by size)
+- /blog.html?post=best-55-inch-4k-tv-nepal - Best 55 inch 4K TV in Nepal 2026 under Rs 1 lakh
+- /blog.html?post=skyworth-tv-price-nepal - Skyworth TV price in Nepal (32 to 65 inch, 4K UHD Google TV)
+- /blog.html?post=refrigerator-price-nepal-2026 - Refrigerator price in Nepal 2026 (single, double door, frost free)
+- /blog.html?post=best-refrigerator-in-nepal-2026 - Best refrigerator in Nepal 2026 for every budget
+- /blog.html?post=washing-machine-price-nepal-2026 - Washing machine price in Nepal 2026 (top load, front load, semi-auto)
+- /blog.html?post=best-washing-machine-nepal-2026 - Best washing machine in Nepal 2026 for every budget
+- /blog.html?post=ac-price-nepal-2026 - AC price in Nepal 2026 (1 ton, 1.5 ton, inverter)
+- /blog.html?post=air-cooler-price-nepal-2026 - Air cooler price in Nepal 2026 (desert cooler)
+- /blog.html?post=water-purifier-price-nepal-2026 - Water purifier price in Nepal 2026 (RO, UV, UF)
+- /blog.html?post=second-hand-appliance-price-nepal-2026 - Second-hand appliance prices in Nepal 2026 + old appliance exchange
+- /blog.html?post=small-appliances-price-nepal-2026 - Small home appliance prices in Nepal 2026 (geyser, dispenser, microwave, fans)
+
+## Social
+- Facebook: https://www.facebook.com/joinelectroniccenter
+- Instagram: https://www.instagram.com/joinelectronic
+- TikTok: https://www.tiktok.com/@joinelectronicscentre
+- YouTube: https://www.youtube.com/results?search_query=Join+Electronic+Center+Samakhushi
+- Tripadvisor: https://www.tripadvisor.com/Attraction_Review-g293890-d25300420-Reviews-Join_Electronic_Center-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html
+- Google Business (reviews): https://g.page/r/CRBpNA834DU9EBM/review
+
+## Brands
+- Himstar, Samsung, Skyworth, Whirlpool, Videocon, Livpure, AURA, Panasonic, Hitachi, Miriza, Galanz
+
+## FAQ
+- Q: Do you deliver across Nepal?
+  A: Yes, we deliver home appliances across Nepal. Free local delivery inside Kathmandu valley, and shipping is available to all districts.
+- Q: Do you offer EMI payment options?
+  A: Yes, easy monthly installment (EMI) options are available on selected products. Contact us on WhatsApp with the model you like and we will share the EMI plan.
+- Q: What warranty do your products have?
+  A: All products come with manufacturer warranty. Most refrigerators, TVs and washing machines carry 1 year full service warranty and compressors/panels are covered longer (check each product page).
+- Q: Can I exchange my old TV or fridge?
+  A: Yes! We accept old TV and fridge exchange with cashback value depending on the condition of your old unit. Send us a photo on WhatsApp for a quote.
+- Q: What payment methods do you accept?
+  A: We accept cash on delivery (COD), bank transfer, eSewa/Khalti, and card payments. EMI available on selected products.
+- Q: How do I order a product?
+  A: Simple: open any product page and tap 'Chat on WhatsApp', or send us the model code. We confirm price, availability, delivery and warranty, then arrange delivery.
+
+## Data Endpoints
+- /data/catalog.json - Full product catalog (JSON, enriched)
+- /products/ai-feed.csv - Full product catalog (CSV)
+- /products/products.json - Store meta + full product catalog (JSON)
+- /products/ai-faq.json - Bilingual FAQ (JSON)
+- /posts.json - Store offers and news (JSON)
+- /blog/blog.json - Blog posts (JSON)
+- /social.json - Social platforms and recent posts (JSON)
+
+## Product Count: 378

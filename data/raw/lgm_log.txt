@@ -1,0 +1,98 @@
+[livpure] search: livpure+refrigerator
+[livpure] search: livpure+fridge
+[livpure] search: livpure+television
+[livpure] search: livpure+smart+tv
+[livpure] search: livpure+washing+machine
+[livpure] search: livpure+washer
+[livpure] search: livpure+air+conditioner
+[livpure] search: livpure+ac+split
+[livpure] search: livpure+air+cooler
+[livpure] -> Livpure Personal Air Cooler Chill 35 L | MRP 14700
+[livpure] -> Livpure LIVFREE Desert Air Cooler 85 L | MRP 27575
+[livpure] -> Livpure Magnakool Tower Air Cooler- 58L | MRP 20500
+[livpure] -> Livpure LIVFREE Desert Air Cooler 65 L | MRP 23840
+[livpure] -> LIVPURE MULTICOOL 60 L MINI DESERT AIR COOLER | MRP 22800
+[livpure] -> Livpure Livfree 65 Liters Desert Air Cooler | MRP 19500
+[livpure] -> Livfree 85 Litres (LF85LD) | MRP 22500
+[livpure] -> Livpure Glitz Pure RO+UF+ Mineraliser Water Purifier | MRP 32999
+[livpure] search: livpure+water+dispenser
+[livpure] -> Livpure Bolt+ Copper | MRP 34999
+[livpure] -> Livpure Platino + Copper (RO+UV +UF + Mineraliliser) Water P | MRP 46199
+[livpure] -> Livpure Zinger  Copper Hot (RO +UV +UF +Taste Enhancer ) 6.5 | MRP 58121
+[livpure] -> Livpure Platino+ Copper | MRP 43999
+[livpure] -> Livpure blot copper (RO + UV + Mineraliser) Water Purifier | MRP 36749
+[livpure] -> Livpure blot copper (RO + UV + Mineraliser) Water Purifier | MRP 36749
+[livpure] -> Livpure Zinger Copper Hot Water Purifier | MRP 55399
+[livpure] -> Livpure Platino + Copper (RO+UV +UF + Mineraliliser) Water P | MRP 46199
+[livpure] search: livpure+microwave+oven
+[livpure] search: livpure+water+purifier
+[livpure] -> Livpure Envy Alkaline RO+UV+UF+Smart TDS Adjuster+Alkaliser  | MRP 35599
+[livpure] -> Livpure Bolt+ Copper, Water Purifier (RO+UV+Mineraliser+Copp | MRP 36749
+[livpure] -> Livpure  8 Ltr Water Purifier Envy Alkaline, Ro+UV+UF+Taste  | MRP 33899
+[livpure] -> Livpure Glitz Silver (Ro+Uf+Mineraliser) Water Purifier | MRP 32999
+[livpure] -> Livpure Platino+ Copper (Ro+Uv+Uf+Mineraliser) Water Purifie | MRP 46199
+[livpure] -> Livpure Sereno - SS RO+UV+UF Water Purifier with Copper & Mi | MRP 49999
+[livpure] -> Livpure Bolt+ Copper (Ro+Uv+Mineraliser) Water Purifier | MRP 36749
+[livpure] -> Livpure Platino+ copper 8.5 ltrs (R0+Uv+Uf+Mineraliser) Wate | MRP 46199
+[livpure] saved 24 -> D:\Antigravity Project\store-catalog\data\raw\daraz_brand_livpure.json
+[galanz] search: galanz+refrigerator
+[galanz] -> Himstar 171 Ltr Single Door Refrigerator - HR-205BRHN With B | MRP 29990
+[galanz] -> Himstar 190L Single Door Refrigerator HR-21D92SHJ/DX | 5 Sta | MRP 30990
+[galanz] -> Plastic Fridge Storage Boxes Freezer Storage Containers Refr | MRP 700
+[galanz] -> Glen Active-Blender, 350W, 20000 RPM Mixer, Grinder, Blender | MRP 8250
+[galanz] -> SAMSUNG 253 Ltr Frost Free Double Door Refrigerator RT40H28W | MRP 60990
+[galanz] -> Aura 110 Liters Chest Freezer AUCF110HW | MRP 31510
+[galanz] -> Samsung 253L Double Door Refrigerator RT28A3022GS | Digital  | MRP 59990
+[galanz] -> 1Pc Fridge Cover for Top Double Door with Utility Pockets Wa | MRP 300
+[galanz] search: galanz+television
+[galanz] -> Universal Air Conditioner Remote Control Replacement for Gal | MRP 2352
+[galanz] -> NEW Universal Air Conditioner Remote Control Replacement for | MRP 1845
+[galanz] -> NEW Universal Air Remote Control for Galanz GZ-1002A-E3 GZ-1 | MRP 3037
+[galanz] -> Universal Air Conditioner Remote Control Replacement for Gal | MRP 3772
+[galanz] search: galanz+smart+tv
+[galanz] search: galanz+washing+machine
+[galanz] -> HW-70FU4FSJ/GZ | Himstar Washing Machine | MRP 55990
+[galanz] -> Heavy Waterproof Front Load Washing Machine Cover Compatible | MRP 700
+[galanz] -> 12pcs Washing Machine Cleaner Detergent Effervescent Tablet | MRP 275
+[galanz] -> Waterproof Washing machine Heavy Cover 6 -10 Kg | Double Lay | MRP 600
+[galanz] -> Wheel Active Green 2 in 1 Detergent Powder 950gm | MRP 140
+[galanz] -> Mini Portable Ultrasonic Turbine Washing Machine Turner USB  | MRP 811
+[galanz] -> Washing Machine Cover Blue Waterproof 6 To 8 Kg | Waterproof | MRP 700
+[galanz] -> Fortune Dishwasher Active Nun 2 Kg - Compatible with All Dis | MRP 1000
+[galanz] search: galanz+air+conditioner
+[galanz] -> CG 2 Burner Auto Ignition Gas Stove CGIGNITE 2BSV2BL | MRP 4070
+[galanz] -> Dual Head USB Air Cooler Fan with Spray & Remote  3-Speed Re | MRP 1600
+[galanz] -> Environment Friendly Led Tube 1Feet Green Light | MRP 399
+[galanz] -> Mini Air Cooler Fan plus Humidifier - Air Conditioner With W | MRP 1200
+[galanz] -> Mini Air Cooler Fan plus Humidifier - Air Conditioner With W | MRP 1499
+[galanz] -> Portable Mini Air Cooler & Humidifier  Compact Air Condition | MRP 999
+[galanz] -> 4 In 1 Mini Air Cooler Fan plus Humidifier - Air Conditioner | MRP 2050
+[galanz] -> Mini Air Cooler Fan plus Humidifier - Air Conditioner With W | MRP 1099
+[galanz] search: galanz+air+cooler
+[galanz] search: galanz+desert+cooler
+[galanz] search: galanz+water+dispenser
+[galanz] search: galanz+microwave+oven
+[galanz] -> Microwave Oven Mica Plate Mica Sheet For Galanz Microwave Ov | MRP 922
+[galanz] -> Microwave Oven Mica Sheet Wave Guide Waveguide Cover Sheet F | MRP 746
+[galanz] -> 5pcs/lot,150 X 120mm Mica Plates Sheets fHigh,Quality Microw | MRP 1914
+[galanz] -> 10Pcs 150 MM X 120 MM Mica Plates For Galanz    Etc Microwav | MRP 2734
+[galanz] -> 10 Pcs 15 x 12 cm Mica Plates For Galanz    etc Microwave Ov | MRP 3054
+[galanz] -> 5Pcs 108 mm X 99 mm Microwave Oven Mica Sheet for Galanz     | MRP 2494
+[galanz] search: galanz+water+purifier
+[galanz] saved 34 -> D:\Antigravity Project\store-catalog\data\raw\daraz_brand_galanz.json
+[miriza] search: miriza+refrigerator
+[miriza] search: miriza+fridge
+[miriza] search: miriza+television
+[miriza] search: miriza+smart+tv
+[miriza] search: miriza+washing+machine
+[miriza] search: miriza+washer
+[miriza] search: miriza+air+conditioner
+[miriza] search: miriza+ac+split
+[miriza] search: miriza+air+cooler
+[miriza] search: miriza+desert+cooler
+[miriza] search: miriza+water+dispenser
+[miriza] search: miriza+microwave+oven
+[miriza] search: miriza+water+purifier
+[miriza] saved 0 -> D:\Antigravity Project\store-catalog\data\raw\daraz_brand_miriza.json
+
+MERGED 347 records -> D:\Antigravity Project\store-catalog\data\raw\daraz_scrape.json

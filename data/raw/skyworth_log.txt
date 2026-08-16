@@ -1,0 +1,60 @@
+[skyworth] search: skyworth+refrigerator
+[skyworth] -> SKYWORTH Chest Freezer 360 Liters - SCF 390_Dark Silver | MRP 67300
+[skyworth] -> SKYWORTH Dark Gray Color Double Door 280 Ltr Refrigerator Mo | MRP 65900
+[skyworth] -> SKYWORTH Black Color 476 Ltrs Multi-Door Refrigerator - SRM- | MRP 155444
+[skyworth] -> Skyworth 476 Litres Multi Door Refrigerator With Inverter Co | MRP 155444
+[skyworth] -> Skyworth 476 Litres Multi Door Refrigerator With Invertor Co | MRP 145444
+[skyworth] -> Skyworth SBS 500WIM 473 Litres Side By Side Inverter Refrige | MRP 129900
+[skyworth] -> SKYWORTH Side By Side 473 Ltr Refrigerator | MRP 145544
+[skyworth] -> SKYWORTH Multi Door 505 Ltr Refrigerator | MRP 155500
+[skyworth] search: skyworth+television
+[skyworth] -> SKYWORTH HD Television 32"( 32 inch LED TV ) 32STD2000 | MRP 30900
+[skyworth] -> Skyworth 50 Inch  4K UHD Smart Google TV LED - 50SUE9350F | MRP 104500
+[skyworth] -> Skyworth 75 Inch QLED Google TV UHD 4K HDR10+ Dolby Vision S | MRP 325000
+[skyworth] -> SKYWORTH 65SUE9500 QLED 4K/UHD Google Smart TV - 65" | MRP 225000
+[skyworth] -> SKYWORTH 55Q6500G QLED 4K/UHD Google Smart Television-55" (5 | MRP 123999
+[skyworth] -> SKYWORTH 65 inch 4K UHD Google TV - 65G6500G | MRP 146900
+[skyworth] -> SKYWORTH 65Q6500G QLED 4K/UHD Google Smart TV-65" (65 INCH) | MRP 186999
+[skyworth] -> SKYWORTH 65SUE9500 QLED 4K/UHD Google Smart TV - 65" | MRP 225000
+[skyworth] search: skyworth+washing+machine
+[skyworth] -> SKYWORTH 8 Kg Direct Drive Front Loading Washing Machine F80 | MRP 82990
+[skyworth] -> SKYWORTH 8 KG Front Loading Fully Automatic Washing Machine  | MRP 69900
+[skyworth] -> SKYWORTH 8 Kg Front Loading Washing Machine F80465VB | MRP 69000
+[skyworth] -> Skyworth  F8012GRD 8 Kg Direct Drive Front Loading Washing M | MRP 86500
+[skyworth] -> Skyworth 10 Kg BLDC Inverter Front Loading Fully Automatic W | MRP 87900
+[skyworth] -> SKYWORTH 7 KG Front Loading Fully Automatic Washing Machine  | MRP 58700
+[skyworth] -> Skyworth 12 Kg BLDC Inverter Front Loading Fully Automatic W | MRP 99900
+[skyworth] -> SKYWORTH 8 Kg Direct Drive Front Loading Washing Machine F80 | MRP 86500
+[skyworth] search: skyworth+air+conditioner
+[skyworth] -> Skyworth 1.5 Ton Inverter Wall Mount Split Type Air Conditio | MRP 127900
+[skyworth] -> Skyworth 1 Ton Inverter Split Air Conditioner | MRP 85000
+[skyworth] -> SKYWORTH Split Inverter 1 ton Air Conditioner (SMVH12B-BI) | MRP 85000
+[skyworth] -> SKYWORTH Split Non-Inverter 1 ton Air Conditioner (SMFH12B) | MRP 69000
+[skyworth] -> SKYWORTH Split Non-Inverter 1.5 ton Air Conditioner (SMFH18B | MRP 97990
+[skyworth] -> SKYWORTH Split Inverter 1 ton Air Conditioner (SMVH24B-5A2A3 | MRP 116000
+[skyworth] -> SKYWORTH Split Inverter 1.5 ton Air Conditioner (SMVH18B-R32 | MRP 127900
+[skyworth] search: skyworth+ac+split
+[skyworth] search: skyworth+air+cooler
+[skyworth] -> SKYWORTH 2 Ton Inverter Ceiling Cassette Air Conditioner | MRP 185990
+[skyworth] -> SKYWORTH 1 Ton Inverter Ceiling Cassette Air Conditioner | MRP 135990
+[skyworth] -> SKYWORTH 1.5 Ton Inverter Ceiling Cassette Air Conditioner | MRP 164990
+[skyworth] -> SKYWORTH Split Inverter 1 ton Air Conditioner (SMVH12B-R32) | MRP 87500
+[skyworth] -> SKYWORTH 2 ton Inverter Split Air Conditioner with WiFi | MRP 157480
+[skyworth] search: skyworth+desert+cooler
+[skyworth] search: skyworth+water+dispenser
+[skyworth] -> Water Dispenser Tulip table top dispenser sky | MRP 4450
+[skyworth] -> Automatic Water Dispenser -800 & 1200MAH | Handy water dispe | MRP 950
+[skyworth] -> Electric Water Pump Dispenser, Portable Drinking Water Dispe | MRP 1000
+[skyworth] -> Portable Automatic USB Electric Rechargeable Water Dispenser | MRP 499
+[skyworth] -> Portable Automatic USB Electric Rechargeable Water Dispenser | MRP 499
+[skyworth] -> USB Charging Water Dispenser, Portable Water Bottle Pump for | MRP 775
+[skyworth] -> Water Dispenser Hot And Normal | MRP 3500
+[skyworth] search: skyworth+microwave+oven
+[skyworth] -> SKYWORTH Shiny Steel Color Double Door 420 Ltr Refrigerator  | MRP 90900
+[skyworth] -> 7 Watt Microwave Motion Sensor Bulb-White | MRP 480
+[skyworth] -> Whirlpool Magicook Pro 20SE 20 L Microwave Solo (Black) | MRP 16900
+[skyworth] -> Whirlpool 24 Liters All in One Convection Microwave With 130 | MRP 27700
+[skyworth] search: skyworth+water+purifier
+[skyworth] saved 47 -> D:\Antigravity Project\store-catalog\data\raw\daraz_brand_skyworth.json
+
+MERGED 289 records -> D:\Antigravity Project\store-catalog\data\raw\daraz_scrape.json

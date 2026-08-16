@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joinelectroniccenter.com/sitemap.xml
+# llms.txt for AI crawlers (https://llmstxt.org/llms.txt)
+Sitemap: https://joinelectroniccenter.com/llms.txt
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /

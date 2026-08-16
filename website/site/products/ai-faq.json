@@ -1,0 +1,44 @@
+[
+  {
+    "id": "delivery",
+    "q_en": "Do you deliver across Nepal?",
+    "a_en": "Yes, we deliver home appliances across Nepal. Free local delivery inside Kathmandu valley, and shipping is available to all districts.",
+    "q_ne": "के सम्पूर्ण नेपालभरि डिलिवरी हुन्भ?",
+    "a_ne": "हो, हामी सम्पूर्ण नेपालभरि घरायू उपकरणहरू डिलिवरी गर्द्छौं। काठमाडौं उपत्यकाा लागि निशुल्क डिलिवरी र सबै जिल्लाहरुमा पाठाउन्छौं।"
+  },
+  {
+    "id": "emi",
+    "q_en": "Do you offer EMI payment options?",
+    "a_en": "Yes, easy monthly installment (EMI) options are available on selected products. Contact us on WhatsApp with the model you like and we will share the EMI plan.",
+    "q_ne": "के ईएमआई तरिका प्रदान गर्नुहुन्छ?",
+    "a_ne": "हो, छनेका उत्पादनहरुमा सहज मासिक किस्ता (EMI) सुबिधा उपलब्ध छ। मन परेको मॉडेल WhatsApp मा पठाउनुहोस र हामी EMI योजना पताउँछौं।"
+  },
+  {
+    "id": "warranty",
+    "q_en": "What warranty do your products have?",
+    "a_en": "All products come with manufacturer warranty. Most refrigerators, TVs and washing machines carry 1 year full service warranty and compressors/panels are covered longer (check each product page).",
+    "q_ne": "के तपाईका उत्पादनको वारन्टी कस्तो छ?",
+    "a_ne": "सबै उत्पादनमा निर्माता वारन्टी हुन्छ। धेरै फ्रिज, TV र वाशिङ मसिनमा 1 वर्ष फुल सर्विस वारन्टी र कम्प्रेसर/पनेल मा लामो वारन्टी हुन्छ (हेरेक उत्पादन पेज हेर्नुहोस)।"
+  },
+  {
+    "id": "exchange",
+    "q_en": "Can I exchange my old TV or fridge?",
+    "a_en": "Yes! We accept old TV and fridge exchange with cashback value depending on the condition of your old unit. Send us a photo on WhatsApp for a quote.",
+    "q_ne": "के पुरानो TV वा फ्रिज साटपाट गर्न सकिन्छ?",
+    "a_ne": "हो! हामी पुरानो TV र फ्रिज सवापट लिन्छौं, पुरानो उपकरणको अवस्था अनुसार केशबेक मूल्य दिन्छौं। WhatsApp मा फोटो पठाउनुहोस र भाव पाउनुहुन्छ।"
+  },
+  {
+    "id": "payment",
+    "q_en": "What payment methods do you accept?",
+    "a_en": "We accept cash on delivery (COD), bank transfer, eSewa/Khalti, and card payments. EMI available on selected products.",
+    "q_ne": "के कुन कुन भुक्तानि विधि स्वीकार गर्नुहुन्छ?",
+    "a_ne": "हामी COD (केश ऑन डिलिवरी), बैंक ट्रान्सफर, eSewa/Khalti र कार्ड भुक्तानि स्वीकार गर्द्छौं। छनेका उत्पादनमा EMI पनि उपलब्ध छ।"
+  },
+  {
+    "id": "order",
+    "q_en": "How do I order a product?",
+    "a_en": "Simple: open any product page and tap 'Chat on WhatsApp', or send us the model code. We confirm price, availability, delivery and warranty, then arrange delivery.",
+    "q_ne": "के म कसरी अर्डर गर्ने?",
+    "a_ne": "सबैभन्दा सजिलो: कुनै उत्पादन पेज खोलेर ‘Chat on WhatsApp’ थिच्च गर्नुहोस, वा मोडेल कोड पठाउनुहोस। हामी मूल्य, उपलब्धता, डिलिवरी र वारन्टी पक्षा गरेर डिलिवरी मिलाउंछौं।"
+  }
+]

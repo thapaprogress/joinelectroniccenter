@@ -1,0 +1,62 @@
+{
+  "platforms": [
+    {
+      "name": "Facebook",
+      "handle": "Join Electronic Center",
+      "url": "https://www.facebook.com/joinelectroniccenter",
+      "meta": "7.2K followers",
+      "glyph": "f"
+    },
+    {
+      "name": "Instagram",
+      "handle": "@joinelectronic",
+      "url": "https://www.instagram.com/joinelectronic",
+      "meta": "Photos & reels",
+      "glyph": "i"
+    },
+    {
+      "name": "TikTok",
+      "handle": "@joinelectronicscentre",
+      "url": "https://www.tiktok.com/@joinelectronicscentre",
+      "meta": "Offers & stock",
+      "glyph": "t"
+    },
+    {
+      "name": "YouTube",
+      "handle": "Join Electronic Center",
+      "url": "https://www.youtube.com/results?search_query=Join+Electronic+Center+Samakhushi",
+      "meta": "Videos",
+      "glyph": "y"
+    },
+    {
+      "name": "Tripadvisor",
+      "handle": "5.0 / 5 rating",
+      "url": "https://www.tripadvisor.com/Attraction_Review-g293890-d25300420-Reviews-Join_Electronic_Center-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html",
+      "meta": "Travelers' Choice",
+      "glyph": "t"
+    }
+  ],
+  "posts": [
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/joinelectroniccenter",
+      "title": "Washing machine at just Rs. 17,000",
+      "body": "Brand new, easy to use, best for village use. Contact us now: 9851045662.",
+      "date": "2026-07-17"
+    },
+    {
+      "platform": "TikTok",
+      "url": "https://www.tiktok.com/@joinelectronicscentre",
+      "title": "Stock clearance offer",
+      "body": "Washing machines at Rs 35,000 - sizes 7, 7.5 and 8 kg. Visit us or call 9851045662.",
+      "date": "2026"
+    },
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/joinelectroniccenter",
+      "title": "Serving Kathmandu for 20+ years",
+      "body": "Home and office electronics - sales, service, exchange, repair. Delivery available. Samsung, LG, Dicom, Haier, Hisense, Sony, Baltra, Konka, Panasonic.",
+      "date": "2026"
+    }
+  ]
+}

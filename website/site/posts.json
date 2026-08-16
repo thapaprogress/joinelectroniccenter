@@ -1,0 +1,47 @@
+[
+  {
+    "id": "p1",
+    "type": "offer",
+    "title": "Old appliance exchange - cashback on your new TV or fridge",
+    "body": "Send a photo of your old appliance on WhatsApp and get an honest cashback quote in minutes. The value is deducted on your new purchase, with free pickup inside Kathmandu valley.",
+    "link": "/exchange.html",
+    "link_text": "Start an exchange",
+    "date": "2026-08-15"
+  },
+  {
+    "id": "p2",
+    "type": "offer",
+    "title": "Easy EMI on selected appliances",
+    "body": "Take home a new appliance today and pay in easy monthly installments. Exchange value is deducted first, then EMI can be arranged on the balance. Message us for your plan.",
+    "link": "/appliance-finder.html",
+    "link_text": "Calculate your EMI",
+    "date": "2026-08-15"
+  },
+  {
+    "id": "p3",
+    "type": "info",
+    "title": "Serving Kathmandu for 20+ years",
+    "body": "From our store at Samakhushi Chowk we have served homes and offices for over two decades - sales, service, exchange and repair. Trusted brands: Samsung, LG, Himstar, Skyworth, Whirlpool, Aura, Panasonic and more.",
+    "link": "/contact.html",
+    "link_text": "Visit our store",
+    "date": "2026-08-15"
+  },
+  {
+    "id": "p4",
+    "type": "offer",
+    "title": "Second-hand clearance - tested units, big discounts",
+    "body": "Checked and serviced second-hand TVs, fridges and washing machines in stock at 40-60% below new MRP, with a 30-day service guarantee. Stock moves fast - ask for today's list on WhatsApp.",
+    "link": "/second-hand.html",
+    "link_text": "See second-hand stock",
+    "date": "2026-08-15"
+  },
+  {
+    "id": "p5",
+    "type": "info",
+    "title": "Free delivery + installation inside Kathmandu valley",
+    "body": "Order any appliance and we deliver and install it for free inside the valley, with shipping across Nepal. Payment: cash, bank, eSewa/Khalti or card. EMI on selected models.",
+    "link": "/shop.html",
+    "link_text": "Browse the catalog",
+    "date": "2026-08-15"
+  }
+]

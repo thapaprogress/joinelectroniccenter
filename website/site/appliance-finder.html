@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliance Finder + EMI Calculator | Join Electronic Center</title>
+  <meta name="description" content="Find your perfect appliance by budget and family size, and calculate your monthly EMI — Join Electronic Center, Kathmandu.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EJEC%3C/text%3E%3C/svg%3E">
+    <link rel="canonical" href="https://joinelectroniccenter.com/appliance-finder.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Join Electronic Center">
+  <meta property="og:title" content="Appliance Finder + EMI Calculator | Join Electronic Center">
+  <meta property="og:description" content="Find the right TV, fridge, washing machine or AC for your budget and family size, and calculate monthly EMI instantly. Join Electronic Center, Kathmandu.">
+  <meta property="og:url" content="https://joinelectroniccenter.com/appliance-finder.html">
+  <meta property="og:image" content="https://joinelectroniccenter.com/photos/AURA/AU12FSWAC.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Appliance Finder + EMI Calculator | Join Electronic Center">
+  <meta name="twitter:description" content="Find the right TV, fridge, washing machine or AC for your budget and family size, and calculate monthly EMI instantly. Join Electronic Center, Kathmandu.">
+  <meta name="twitter:image" content="https://joinelectroniccenter.com/photos/AURA/AU12FSWAC.png">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYNYWLHKZJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYNYWLHKZJ');
+</script>
+<meta name="google-site-verification" content="eN_w_K_cmJ3DwzAIVwAXQ4dtziGlorjbp03BR3TeAYI">
+<meta name="msvalidate.01" content="132FD1EBFB4DC860368794F461320DB9">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">JEC</span>
+        <span>Join Electronic Center<small>Appliance Store</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">&#9776;</button>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="exchange.html">Exchange</a>
+        <a href="second-hand.html">Second Hand</a>
+        <a href="appliance-finder.html">Appliance Finder</a>
+        <a href="brand.html">Brands</a>
+        <a href="category.html">Categories</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-wa" href="https://wa.me/9779765985999?text=Namaste!%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener">&#128172; WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Find Your Perfect Appliance</h1>
+        <p>Tell us your budget and family size &mdash; we will recommend the best models for your home. Plus an EMI calculator.</p>
+      </div>
+    </section>
+
+    <div class="container wizard">
+      <div class="wizard-form">
+        <h2>Your needs</h2>
+        <div class="field">
+          <label for="wizCat">What do you need?</label>
+          <select id="wizCat">
+            <option value="Refrigerator">Refrigerator</option>
+            <option value="Television">Television</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="Air Conditioner">Air Conditioner</option>
+            <option value="Air Cooler">Air Cooler</option>
+            <option value="Microwave Oven">Microwave Oven</option>
+            <option value="Water Purifier">Water Purifier</option>
+            <option value="Water Dispenser">Water Dispenser</option>
+            <option value="Small Home Appliance">Small Home Appliance</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="wizBudget">Budget (NPR): <span id="wizBudgetVal">80,000</span></label>
+          <input type="range" id="wizBudget" min="10000" max="400000" step="5000" value="80000">
+        </div>
+        <div class="field">
+          <label for="wizFamily">Family size: <span id="wizFamilyVal">4</span> members</label>
+          <input type="range" id="wizFamily" min="1" max="12" step="1" value="4">
+        </div>
+        <button class="btn btn-primary" id="wizBtn" type="button" style="width:100%;">Find My Appliance</button>
+        <p style="font-size:0.8rem;color:var(--muted);margin:12px 0 0;">Family size helps us prefer larger-capacity models when your budget allows.</p>
+      </div>
+
+      <div>
+        <div class="wizard-results" id="wizResults">
+          <p class="loading">Pick your needs and press "Find My Appliance" to see recommendations.</p>
+        </div>
+
+        <div class="emi-calc">
+          <h2>EMI Calculator</h2>
+          <div class="range-row">
+            <div class="field">
+              <label for="emiPrice">Product price (NPR): <span id="emiPriceVal">80,000</span></label>
+              <input type="range" id="emiPrice" min="1000" max="400000" step="1000" value="80000">
+            </div>
+            <div class="field">
+              <label for="emiMonths">Tenure: <span id="emiMonthsVal">12</span> months</label>
+              <input type="range" id="emiMonths" min="3" max="24" step="3" value="12">
+            </div>
+          </div>
+          <div class="emi-result" id="emiResult">रु. 0/month</div>
+          <p style="font-size:0.8rem;color:var(--muted);margin:8px 0 0;">Approximate monthly installment at ~1.5% flat monthly rate. Final EMI confirmed on WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Join Electronic Center</h4>
+          <p style="margin:0 0 8px;">Your trusted home appliance store. &#2310;&#2347;&#2379; &#2325;&#2379; &#2354;&#2366;&#2327;&#2366;&#2312; &#2310;&#2340;&#2381;&#2350;&#2366;&#2344; &mdash; the best for your home.</p>
+          <p style="margin:0 0 8px;">&#10003; Free local delivery &nbsp;&#10003; EMI available &nbsp;&#10003; Old appliance exchange</p>
+          <p style="margin:0;font-size:0.85rem;">Prices shown are MRP in Nepali Rupees and may change without notice.</p>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="https://www.facebook.com/joinelectroniccenter" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">f</a>
+            <a href="https://www.instagram.com/joinelectronic" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">i</a>
+            <a href="https://www.tiktok.com/@joinelectronicscentre" target="_blank" rel="noopener" aria-label="TikTok" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">t</a>
+            <a href="https://www.youtube.com/results?search_query=Join+Electronic+Center+Samakhushi" target="_blank" rel="noopener" aria-label="YouTube" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">y</a>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g293890-d25300420-Reviews-Join_Electronic_Center-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank" rel="noopener" aria-label="Tripadvisor" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">t</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p style="margin:0 0 6px;"><a href="index.html">Home</a></p>
+          <p style="margin:0 0 6px;"><a href="shop.html">Shop</a></p>
+          <p style="margin:0 0 6px;"><a href="brand.html">Brands</a></p>
+          <p style="margin:0 0 6px;"><a href="category.html">Categories</a></p>
+<p style="margin:0 0 6px;"><a href="about.html">About</a></p>
+          <p style="margin:0 0 6px;"><a href="warranty.html">Warranty</a></p>
+          <p style="margin:0 0 6px;"><a href="exchange.html">Exchange</a></p>
+          <p style="margin:0 0 6px;"><a href="second-hand.html">Second Hand</a></p>
+          <p style="margin:0 0 6px;"><a href="https://analytics.google.com/analytics/web/#/a254123202p353965557/admin/streams/table/15443995653" target="_blank" rel="noopener">Analytics</a></p>
+<p style="margin:0;"><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p style="margin:0 0 6px;">Call / WhatsApp: <a href="tel:+9779765985999">+977-9765985999</a> &nbsp;|&nbsp; <a href="tel:+9779851045662">9851045662</a></p>
+          <p style="margin:0 0 6px;">Samakhushi Chowk, Tokha Road, Kathmandu</p>
+          <p style="margin:0 0 6px;">Open daily, 9 AM &ndash; 7 PM (NPT)</p>
+          <p style="margin:0;">Delivery across Nepal</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Join Electronic Center. All rights reserved.</span>
+        <span>Made with &#10084;&#65039; in Nepal</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/9779765985999?text=Namaste!%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/analytics.js"></script>
+  <script>
+    (function () {
+      var C = window.Catalog;
+      var catSel = document.getElementById('wizCat');
+      var budget = document.getElementById('wizBudget');
+      var budgetVal = document.getElementById('wizBudgetVal');
+      var family = document.getElementById('wizFamily');
+      var familyVal = document.getElementById('wizFamilyVal');
+      var wizBtn = document.getElementById('wizBtn');
+      var results = document.getElementById('wizResults');
+
+      var emiPrice = document.getElementById('emiPrice');
+      var emiPriceVal = document.getElementById('emiPriceVal');
+      var emiMonths = document.getElementById('emiMonths');
+      var emiMonthsVal = document.getElementById('emiMonthsVal');
+      var emiResult = document.getElementById('emiResult');
+
+      function fmt(n) { return n.toLocaleString('en-IN'); }
+
+      budget.addEventListener('input', function () { budgetVal.textContent = fmt(parseInt(budget.value, 10)); });
+      family.addEventListener('input', function () { familyVal.textContent = family.value; });
+      emiPrice.addEventListener('input', function () { emiPriceVal.textContent = fmt(parseInt(emiPrice.value, 10)); });
+      emiMonths.addEventListener('input', function () { emiMonthsVal.textContent = emiMonths.value; });
+
+      function runEMI() {
+        var price = parseInt(emiPrice.value, 10);
+        var months = parseInt(emiMonths.value, 10);
+        emiResult.textContent = 'रु. ' + fmt(C.emiMonthly(price, months)) + '/month';
+      }
+      emiPrice.addEventListener('input', runEMI);
+      emiMonths.addEventListener('input', runEMI);
+      runEMI();
+
+      wizBtn.addEventListener('click', function () {
+        var cat = catSel.value;
+        var budgetN = parseInt(budget.value, 10);
+        C.loadCatalog().then(function (list) {
+          var inCat = list.filter(function (p) { return p.category === cat; });
+          var inBudget = inCat.filter(function (p) { return p.mrp_npr <= budgetN; });
+          var picks;
+          if (inBudget.length >= 3) {
+            picks = inBudget.slice().sort(function (a, b) { return a.mrp_npr - b.mrp_npr; }).slice(0, 6);
+          } else {
+            var nearest = inCat.slice().sort(function (a, b) {
+              return Math.abs(a.mrp_npr - budgetN) - Math.abs(b.mrp_npr - budgetN);
+            });
+            picks = nearest.slice(0, Math.max(3, inBudget.length === 0 ? 3 : inBudget.length));
+          }
+          if (!picks.length) {
+            results.innerHTML = '<div class="empty-state"><div class="big">&#128533;</div><h3>No products in this category</h3><p>Try another category.</p></div>';
+            return;
+          }
+          results.innerHTML = '<div class="section-head" style="margin-bottom:14px;"><h2>Recommended for you</h2></div>' +
+            '<div class="grid-cards">' + picks.map(C.productCard).join('') + '</div>' +
+            '<p style="font-size:0.85rem;color:var(--muted);margin-top:14px;">All prices are MRP. EMI and exchange available on these models &mdash; tap a product to chat on WhatsApp.</p>';
+        }).catch(function () {
+          results.innerHTML = '<p class="error-msg">Failed to load catalog. Please refresh.</p>';
+        });
+      });
+    })();
+  </script>
+  <script src="js/search-modal.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>

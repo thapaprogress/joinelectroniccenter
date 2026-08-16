@@ -1,0 +1,85 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Brand {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  slug      String    @unique
+  logoUrl   String?
+  products  Product[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  name      String    @unique
+  slug      String    @unique
+  icon      String?
+  products  Product[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Product {
+  id               String   @id @default(cuid())
+  modelCode        String   @unique
+  slug             String   @unique
+  name             String
+  brandId          String
+  brand            Brand    @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  categoryId       String
+  category         Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  type             String?
+  capacity         String?
+  mrpNpr           Float
+  emiMonthly12     Float?
+  shortDescription String?
+  detailedSpecs    String?
+  specsList        String?  // JSON string
+  warranty         String?
+  imageUrl         String?
+  photoPath        String?
+  hasLocalPhoto    Boolean  @default(false)
+  source           String?
+  inStock          Boolean  @default(true)
+  featured         Boolean  @default(false)
+  whatsapp         String   @default("9779851045662")
+  metaTitle        String?
+  metaDescription  String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([brandId])
+  @@index([categoryId])
+  @@index([slug])
+  @@index([mrpNpr])
+}
+
+model Inquiry {
+  id               String   @id @default(cuid())
+  name             String
+  phone            String
+  message          String?
+  productModel     String?
+  type             String   @default("general") // general, exchange, emi, product_inquiry
+  status           String   @default("pending") // pending, contacted, completed, cancelled
+  estimatedValue   Float?
+  oldItemCondition String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model VisitLog {
+  id        String   @id @default(cuid())
+  path      String
+  referrer  String?
+  userAgent String?
+  ipHash    String?
+  timestamp DateTime @default(now())
+}

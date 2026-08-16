@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Home Appliances in Kathmandu | Join Electronic Center</title>
+  <meta name="description" content="Buy TVs, refrigerators, washing machines and air conditioners in Kathmandu. Samsung, Skyworth, Himstar, Whirlpool. EMI + exchange, free valley delivery.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='68' font-size='48' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EJEC%3C/text%3E%3C/svg%3E">
+    <link rel="canonical" href="https://joinelectroniccenter.com/shop.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Join Electronic Center">
+  <meta property="og:title" content="Shop All Appliances | Join Electronic Center Kathmandu">
+  <meta property="og:description" content="Browse 378 home appliances at Join Electronic Center Kathmandu. Filter by brand, category and budget. Honest NPR pricing with EMI and exchange.">
+  <meta property="og:url" content="https://joinelectroniccenter.com/shop.html">
+  <meta property="og:image" content="https://joinelectroniccenter.com/photos/AURA/AU12FSWAC.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shop All Appliances | Join Electronic Center Kathmandu">
+  <meta name="twitter:description" content="Browse 378 home appliances at Join Electronic Center Kathmandu. Filter by brand, category and budget. Honest NPR pricing with EMI and exchange.">
+  <meta name="twitter:image" content="https://joinelectroniccenter.com/photos/AURA/AU12FSWAC.png">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JYNYWLHKZJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JYNYWLHKZJ');
+</script>
+<meta name="google-site-verification" content="eN_w_K_cmJ3DwzAIVwAXQ4dtziGlorjbp03BR3TeAYI">
+<meta name="msvalidate.01" content="132FD1EBFB4DC860368794F461320DB9">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">JEC</span>
+        <span>Join Electronic Center<small>Appliance Store</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">&#9776;</button>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="exchange.html">Exchange</a>
+        <a href="second-hand.html">Second Hand</a>
+        <a href="appliance-finder.html">Appliance Finder</a>
+        <a href="brand.html">Brands</a>
+        <a href="category.html">Categories</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="header-wa" href="https://wa.me/9779765985999?text=Namaste!%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener">&#128172; WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Shop All Products</h1>
+        <p>Filter by brand, category and price &mdash; find your perfect appliance from our full catalog.</p>
+      </div>
+    </section>
+
+    <div class="container shop-layout">
+      <aside class="shop-sidebar" aria-label="Filters">
+        <div class="sidebar-group">
+          <h3>Brand</h3>
+          <div class="check-list" id="brandChecks"></div>
+        </div>
+        <div class="sidebar-group">
+          <h3>Category</h3>
+          <div class="field">
+            <label class="sr-only" for="catSelect">Category</label>
+            <select id="catSelect"><option value="">All Categories</option></select>
+          </div>
+        </div>
+        <div class="sidebar-group">
+          <h3>Price Range (NPR)</h3>
+          <div class="range-row">
+            <div class="field">
+              <label for="minInput">Min</label>
+              <input type="number" id="minInput" min="0" step="500" placeholder="0">
+            </div>
+            <div class="field">
+              <label for="maxInput">Max</label>
+              <input type="number" id="maxInput" min="0" step="500" placeholder="400000">
+            </div>
+          </div>
+          <div class="field">
+            <label for="minRange">Min slider</label>
+            <input type="range" id="minRange" min="0" max="400000" step="1000" value="0">
+          </div>
+          <div class="field">
+            <label for="maxRange">Max slider</label>
+            <input type="range" id="maxRange" min="0" max="400000" step="1000" value="400000">
+          </div>
+        </div>
+        <div class="filter-actions">
+          <button class="btn btn-outline" id="clearBtn" type="button">Clear Filters</button>
+          <button class="btn btn-primary" id="applyBtn" type="button">Apply</button>
+        </div>
+      </aside>
+
+      <div>
+        <div class="shop-toolbar">
+          <div class="search-box">
+            <span class="icon" aria-hidden="true">&#128269;</span>
+            <label class="sr-only" for="searchInput">Search products</label>
+            <input type="search" id="searchInput" placeholder="Search name, model or brand&hellip;">
+          </div>
+          <div class="field" style="margin:0;">
+            <label class="sr-only" for="sortSelect">Sort products</label>
+            <select id="sortSelect" class="sort-select">
+              <option value="featured">Sort: Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name: A to Z</option>
+              <option value="name-desc">Name: Z to A</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips-row" id="chipsRow" hidden></div>
+        <div class="result-count" id="resultCount"></div>
+        <div class="grid-cards" id="productGrid"><p class="loading">Loading products&hellip;</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Join Electronic Center</h4>
+          <p style="margin:0 0 8px;">Your trusted home appliance store. &#2310;&#2347;&#2379; &#2325;&#2379; &#2354;&#2366;&#2327;&#2366;&#2312; &#2310;&#2340;&#2381;&#2350;&#2366;&#2344; &mdash; the best for your home.</p>
+          <p style="margin:0 0 8px;">&#10003; Free local delivery &nbsp;&#10003; EMI available &nbsp;&#10003; Old appliance exchange</p>
+          <p style="margin:0;font-size:0.85rem;">Prices shown are MRP in Nepali Rupees and may change without notice.</p>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+            <a href="https://www.facebook.com/joinelectroniccenter" target="_blank" rel="noopener" aria-label="Facebook" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">f</a>
+            <a href="https://www.instagram.com/joinelectronic" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">i</a>
+            <a href="https://www.tiktok.com/@joinelectronicscentre" target="_blank" rel="noopener" aria-label="TikTok" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">t</a>
+            <a href="https://www.youtube.com/results?search_query=Join+Electronic+Center+Samakhushi" target="_blank" rel="noopener" aria-label="YouTube" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">y</a>
+            <a href="https://www.tripadvisor.com/Attraction_Review-g293890-d25300420-Reviews-Join_Electronic_Center-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank" rel="noopener" aria-label="Tripadvisor" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#2563eb;color:#fff;text-decoration:none;font-weight:700;">t</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <p style="margin:0 0 6px;"><a href="index.html">Home</a></p>
+          <p style="margin:0 0 6px;"><a href="appliance-finder.html">Appliance Finder</a></p>
+          <p style="margin:0 0 6px;"><a href="brand.html">Brands</a></p>
+          <p style="margin:0 0 6px;"><a href="category.html">Categories</a></p>
+<p style="margin:0 0 6px;"><a href="about.html">About</a></p>
+          <p style="margin:0 0 6px;"><a href="warranty.html">Warranty</a></p>
+          <p style="margin:0 0 6px;"><a href="exchange.html">Exchange</a></p>
+          <p style="margin:0 0 6px;"><a href="second-hand.html">Second Hand</a></p>
+          <p style="margin:0 0 6px;"><a href="https://analytics.google.com/analytics/web/#/a254123202p353965557/admin/streams/table/15443995653" target="_blank" rel="noopener">Analytics</a></p>
+<p style="margin:0;"><a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p style="margin:0 0 6px;">Call / WhatsApp: <a href="tel:+9779765985999">+977-9765985999</a> &nbsp;|&nbsp; <a href="tel:+9779851045662">9851045662</a></p>
+          <p style="margin:0 0 6px;">Samakhushi Chowk, Tokha Road, Kathmandu</p>
+          <p style="margin:0 0 6px;">Open daily, 9 AM &ndash; 7 PM (NPT)</p>
+          <p style="margin:0;">Delivery across Nepal</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Join Electronic Center. All rights reserved.</span>
+        <span>Made with &#10084;&#65039; in Nepal</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/9779765985999?text=Namaste!%20I%20have%20a%20question%20about%20your%20products." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/analytics.js"></script>
+  <script>
+    (function () {
+      var C = window.Catalog;
+      var MAX_PRICE = 400000;
+      var list = [];
+      var brandChecks = document.getElementById('brandChecks');
+      var catSelect = document.getElementById('catSelect');
+      var minInput = document.getElementById('minInput');
+      var maxInput = document.getElementById('maxInput');
+      var minRange = document.getElementById('minRange');
+      var maxRange = document.getElementById('maxRange');
+      var searchInput = document.getElementById('searchInput');
+      var sortSelect = document.getElementById('sortSelect');
+      var grid = document.getElementById('productGrid');
+      var countEl = document.getElementById('resultCount');
+      var chipsRow = document.getElementById('chipsRow');
+      var clearBtn = document.getElementById('clearBtn');
+      var applyBtn = document.getElementById('applyBtn');
+
+      var state = {
+        brands: [],
+        category: '',
+        q: '',
+        min: 0,
+        max: MAX_PRICE,
+        sort: 'featured'
+      };
+
+      function readState() {
+        var b = C.getQueryParam('brand');
+        state.brands = b ? String(b).split(',').filter(Boolean) : [];
+        state.category = C.getQueryParam('category') || '';
+        state.q = C.getQueryParam('q') || '';
+        state.min = parseInt(C.getQueryParam('min'), 10) || 0;
+        state.max = parseInt(C.getQueryParam('max'), 10) || MAX_PRICE;
+        state.sort = C.getQueryParam('sort') || 'featured';
+      }
+
+      function writeState() {
+        C.setQueryParam('brand', state.brands.length ? state.brands.join(',') : null);
+        C.setQueryParam('category', state.category || null);
+        C.setQueryParam('q', state.q || null);
+        C.setQueryParam('min', state.min > 0 ? String(state.min) : null);
+        C.setQueryParam('max', state.max < MAX_PRICE ? String(state.max) : null);
+        C.setQueryParam('sort', state.sort !== 'featured' ? state.sort : null);
+      }
+
+      function syncControls() {
+        brandChecks.querySelectorAll('input[type="checkbox"]').forEach(function (cb) {
+          cb.checked = state.brands.indexOf(cb.value) !== -1;
+        });
+        catSelect.value = state.category;
+        searchInput.value = state.q;
+        sortSelect.value = state.sort;
+        minInput.value = state.min ? String(state.min) : '';
+        maxInput.value = state.max < MAX_PRICE ? String(state.max) : '';
+        minRange.value = String(Math.min(state.min, MAX_PRICE));
+        maxRange.value = String(state.max);
+      }
+
+      function matches(p) {
+        if (state.brands.length && state.brands.indexOf(p.brand) === -1) return false;
+        if (state.category && p.category !== state.category) return false;
+        var price = parseInt(p.mrp_npr, 10) || 0;
+        if (price < state.min || price > state.max) return false;
+        if (state.q) {
+          var q = state.q.toLowerCase();
+          var hay = (p.product_name + ' ' + p.model_code + ' ' + p.brand).toLowerCase();
+          if (hay.indexOf(q) === -1) return false;
+        }
+        return true;
+      }
+
+      function sorted(arr) {
+        var out = arr.slice();
+        if (state.sort === 'price-asc') out.sort(function (a, b) { return a.mrp_npr - b.mrp_npr; });
+        else if (state.sort === 'price-desc') out.sort(function (a, b) { return b.mrp_npr - a.mrp_npr; });
+        else if (state.sort === 'name-asc') out.sort(function (a, b) { return a.product_name.localeCompare(b.product_name); });
+        else if (state.sort === 'name-desc') out.sort(function (a, b) { return b.product_name.localeCompare(a.product_name); });
+        return out;
+      }
+
+      function chip(label, key, value) {
+        return '<span class="filter-chip">' + C.escapeHtml(label) +
+          '<button type="button" data-key="' + key + '" data-value="' + C.escapeHtml(value) + '" aria-label="Remove filter">&#10005;</button></span>';
+      }
+
+      function renderChips() {
+        var items = [];
+        state.brands.forEach(function (b) { items.push(chip(b, 'brand', b)); });
+        if (state.category) items.push(chip('Category: ' + state.category, 'category', state.category));
+        if (state.q) items.push(chip('Search: "' + state.q + '"', 'q', state.q));
+        if (state.min > 0 || state.max < MAX_PRICE) {
+          items.push(chip('Rs. ' + state.min.toLocaleString('en-IN') + ' - ' + state.max.toLocaleString('en-IN'), 'price', ''));
+        }
+        chipsRow.innerHTML = items.join('');
+        chipsRow.hidden = items.length === 0;
+      }
+
+      function render() {
+        writeState();
+        renderChips();
+        var visible = sorted(list.filter(matches));
+        countEl.textContent = visible.length + (visible.length === 1 ? ' product' : ' products') + ' found';
+        if (!visible.length) {
+          grid.innerHTML = '<div class="empty-state"><div class="big">&#128533;</div><h3>No products match your filters</h3><p>Try clearing filters or searching for something else.</p><button class="btn btn-primary" id="emptyClear" type="button">Clear Filters</button></div>';
+          var ec = document.getElementById('emptyClear');
+          if (ec) ec.addEventListener('click', clearAll);
+          return;
+        }
+        grid.innerHTML = visible.map(C.productCard).join('');
+        C.itemListSchema(visible, 'All Products');
+        if (window.JEC) JEC.viewList(visible, 'shop');
+      }
+
+      function clearAll() {
+        state.brands = [];
+        state.category = '';
+        state.q = '';
+        state.min = 0;
+        state.max = MAX_PRICE;
+        state.sort = 'featured';
+        syncControls();
+        render();
+      }
+
+      chipsRow.addEventListener('click', function (e) {
+        var btn = e.target.closest('button[data-key]');
+        if (!btn) return;
+        var key = btn.getAttribute('data-key');
+        var value = btn.getAttribute('data-value');
+        if (key === 'brand') {
+          var idx = state.brands.indexOf(value);
+          if (idx !== -1) state.brands.splice(idx, 1);
+          syncControls();
+        } else if (key === 'category') { state.category = ''; catSelect.value = ''; }
+        else if (key === 'q') { state.q = ''; searchInput.value = ''; }
+        else if (key === 'price') { state.min = 0; state.max = MAX_PRICE; syncControls(); }
+        render();
+      });
+
+      var debounceTimer = null;
+
+      C.uniqueBrands().then(function (brands) {
+        brandChecks.innerHTML = brands.map(function (b) {
+          return '<label><input type="checkbox" value="' + C.escapeHtml(b) + '">' +
+            '<span>' + C.escapeHtml(b) + '</span></label>';
+        }).join('');
+        return C.categoriesWithCounts();
+      }).then(function (cats) {
+        catSelect.innerHTML = '<option value="">All Categories</option>' + cats.map(function (c) {
+          return '<option value="' + C.escapeHtml(c.name) + '">' + C.escapeHtml(c.name) + ' (' + c.count + ')</option>';
+        }).join('');
+        return C.loadCatalog();
+      }).then(function (products) {
+        list = products;
+        readState();
+        syncControls();
+        render();
+      }).catch(function () {
+        grid.innerHTML = '<p class="error-msg">Failed to load catalog. Please refresh.</p>';
+      });
+
+      brandChecks.addEventListener('change', function (e) {
+        if (e.target.matches('input[type="checkbox"]')) {
+          var value = e.target.value;
+          var idx = state.brands.indexOf(value);
+          if (e.target.checked && idx === -1) state.brands.push(value);
+          if (!e.target.checked && idx !== -1) state.brands.splice(idx, 1);
+          render();
+        }
+      });
+
+      catSelect.addEventListener('change', function () {
+        state.category = catSelect.value;
+        render();
+      });
+
+      searchInput.addEventListener('input', function () {
+        var val = searchInput.value.trim();
+        if (debounceTimer) clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function () {
+          state.q = val;
+          render();
+        }, 250);
+      });
+
+      sortSelect.addEventListener('change', function () {
+        state.sort = sortSelect.value;
+        render();
+      });
+
+      minInput.addEventListener('input', function () {
+        var v = parseInt(minInput.value, 10);
+        if (!isNaN(v)) { state.min = Math.max(0, v); minRange.value = String(Math.min(state.min, MAX_PRICE)); }
+      });
+      maxInput.addEventListener('input', function () {
+        var v = parseInt(maxInput.value, 10);
+        if (!isNaN(v)) { state.max = Math.min(MAX_PRICE, v); maxRange.value = String(state.max); }
+      });
+      minRange.addEventListener('input', function () {
+        var v = parseInt(minRange.value, 10);
+        state.min = v;
+        minInput.value = v ? String(v) : '';
+      });
+      maxRange.addEventListener('input', function () {
+        var v = parseInt(maxRange.value, 10);
+        state.max = v;
+        maxInput.value = v < MAX_PRICE ? String(v) : '';
+      });
+
+      clearBtn.addEventListener('click', clearAll);
+      applyBtn.addEventListener('click', render);
+    })();
+  </script>
+  <script src="js/search-modal.js"></script>
+  <script src="js/pwa.js"></script>
+</body>
+</html>
