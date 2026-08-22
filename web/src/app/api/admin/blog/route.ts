@@ -4,6 +4,8 @@ import path from "path";
 import { prisma } from "@/lib/prisma";
 import { getAllBlogs } from "@/lib/blogs";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   try {
     const blogs = await getAllBlogs();

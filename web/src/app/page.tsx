@@ -14,7 +14,13 @@ import { Footer } from "@/components/Footer";
 import { FloatingActions } from "@/components/FloatingActions";
 import { Product } from "@/types/product";
 
-// Lazy-load heavy interactive modals and calculators for fast initial paint
+import { RefurbishedSection } from "@/components/RefurbishedSection";
+import { ExchangeCalculator } from "@/components/ExchangeCalculator";
+import { EmiCalculator } from "@/components/EmiCalculator";
+import { BlogSection } from "@/components/BlogSection";
+import { SocialMediaFeed } from "@/components/SocialMediaFeed";
+
+// Lazy-load only modals
 const ProductModal = dynamic(
   () => import("@/components/ProductModal").then((mod) => mod.ProductModal),
   { ssr: false }
@@ -22,31 +28,6 @@ const ProductModal = dynamic(
 
 const SearchModal = dynamic(
   () => import("@/components/SearchModal").then((mod) => mod.SearchModal),
-  { ssr: false }
-);
-
-const ExchangeCalculator = dynamic(
-  () => import("@/components/ExchangeCalculator").then((mod) => mod.ExchangeCalculator),
-  { ssr: true }
-);
-
-const EmiCalculator = dynamic(
-  () => import("@/components/EmiCalculator").then((mod) => mod.EmiCalculator),
-  { ssr: true }
-);
-
-const RefurbishedSection = dynamic(
-  () => import("@/components/RefurbishedSection").then((mod) => mod.RefurbishedSection),
-  { ssr: true }
-);
-
-const BlogSection = dynamic(
-  () => import("@/components/BlogSection").then((mod) => mod.BlogSection),
-  { ssr: true }
-);
-
-const SocialMediaFeed = dynamic(
-  () => import("@/components/SocialMediaFeed").then((mod) => mod.SocialMediaFeed),
   { ssr: false }
 );
 
