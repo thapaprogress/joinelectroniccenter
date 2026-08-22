@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 
-export const dynamic = "force-static";
+export const dynamic = "force-dynamic";
 
 export async function GET(request: NextRequest) {
   try {
@@ -89,10 +89,17 @@ export async function GET(request: NextRequest) {
       page,
       limit,
       totalPages: Math.ceil(total / limit),
-      products: products.map((p) => ({
-        ...p,
-        specsList: p.specsList ? JSON.parse(p.specsList) : [],
-      })),
+      products: products.map((p) => {
+        const raw = p.photoPath || "";
+        const clean = raw.replace(/\\/g, "/");
+        const photoPath = clean ? (clean.startsWith("/") ? clean : `/${clean}`) : "";
+        return {
+          ...p,
+          photoPath,
+          hasLocalPhoto: Boolean(photoPath),
+          specsList: p.specsList ? (typeof p.specsList === "string" ? JSON.parse(p.specsList) : p.specsList) : [],
+        };
+      }),
       filters: {
         brands,
         categories,

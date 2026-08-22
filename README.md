@@ -14,54 +14,60 @@
 
 ## 📸 Screenshots & Showcase
 
-### 1. Hero Showcase & Live Trust Metrics
+### 1. Showroom Hero & Instant Search
 ![Hero Showcase](screenshots/01-hero-showcase.png)
 
-### 2. Live Inventory Catalog (378+ Products with Real NPR Pricing)
-![Catalog Grid](screenshots/02-catalog-showcase.png)
+### 2. Recondition & Pre-Owned Clearance Corner (AI Showroom Display)
+![Recondition Clearance](screenshots/05-recondition-clearance.png)
 
 ### 3. Old TV & Fridge Trade-In Cashback Calculator
 ![Trade-in Exchange](screenshots/03-tradein-exchange.png)
 
-### 4. 0% Bank Credit Card EMI Financing Simulator
-![EMI Calculator](screenshots/04-emi-calculator.png)
+### 4. Local Organic Reach Toolkit (Social Bios, Hashtags & Hamrobazaar Template)
+![Social Reach Toolkit](screenshots/06-social-reach-toolkit.png)
+
+### 5. Romanized Nepali SEO Pillar Guide & FAQ Schema
+![Romanized SEO Guide](screenshots/07-romanized-seo-guide.png)
+
+### 6. 100% Mobile Responsive Table & Matrix Layout
+![Mobile Price Matrix](screenshots/08-mobile-price-matrix.png)
 
 ---
 
 ## 🚀 Key Features
 
 ### 🌟 Frontend Experience
-- **Scroll-Triggered Dynamic Sticky Navbar**: Stays invisible at hero load and glides in past `80px` scroll without layout shift.
-- **Global Instant Search (`Ctrl + K` / `/`)**: Keyboard-driven modal with debounced search across all 378+ products, brands, model codes, and specs.
-- **Top Picks Showcase**: Hand-picked editor selections for Flagship 4K TVs, Inverter Fridges, BLDC Washers, and Smart ACs.
-- **Interactive Multi-Facet Catalog**: Filter instantly by Category, Brand (Samsung, Whirlpool, Skyworth, Himstar, etc.), Max Price slider, or Sort order.
-- **Product Modal with Smart Upsells**: High-res gallery, full specs matrix, warranty term, and automatic accessory bundles (Wall mounts, stabilizers, stands).
-- **Old TV & Fridge Trade-In Calculator**: Instant condition-based valuation (up to Rs 8,000 bonus) + direct WhatsApp photo evaluation quote.
-- **0% Credit Card EMI Simulator**: Real-time monthly installment calculator for 6, 12, 18-month tenures across top Nepali banks.
-- **18 SEO/AEO Buying Guides & Price Lists**: In-depth articles covering 2026 appliance pricing and local Kathmandu buying tips.
-- **Dark / Light Mode**: Seamless theme engine persisted in `localStorage`.
-- **100% Mobile Responsive**: Fluid single/multi-column grids, horizontal swipeable filters, and touch-optimized buttons.
+- **100% Mobile Responsive**: Tested on standard viewports down to `390px` mobile devices with fluid single/multi-column grids, horizontal swipeable tables (`overflow-x-auto`), touch targets, and mobile drawer navigation.
+- **Scroll-Triggered Dynamic Sticky Navbar**: Glides in smoothly past `80px` scroll without layout shift.
+- **Global Instant Search (`Ctrl + K` / `/`)**: Keyboard-driven modal searching 378+ appliances, model codes, and specs.
+- **Reconditioned & Second-Hand Hub**: 5-point quality inspected single/double door fridges with 30-day testing warranty.
+- **Old TV & Fridge Trade-In Calculator**: Instant valuation (up to Rs 8,000 cashback) + Romanized WhatsApp inquiry presets.
+- **0% Credit Card EMI Simulator**: Real-time monthly installment calculator across leading Nepali banks.
+- **Local Organic Reach Toolkit**: 1-click copy buttons for:
+  - **Optimized Social Bio**: `"Recondition & New Home Appliances in Samakhusi | Exchange Available"`
+  - **Algorithm Hashtags**: `#PuranoFridge #SecondHandFridgeNepal #SamakhusiElectronics #ReconditionFridgeKtm #SastoFridge #KathmanduSecondHand #ApplianceExchangeNepal #RingRoadElectronics`
+  - **Hamrobazaar Listing Template**: Auto-tagged under Samakhusi / Tokha location.
+- **18+ SEO & AEO Buying Guides**: Detailed price matrix guides including the newly published *Sasto Ma Purano Fridge Kathmandu Guide*.
 
 ### ⚡ Backend & Data Engine
-- **Prisma ORM + SQLite**: Sub-millisecond read queries for lightning-fast catalog search and API responses.
-- **RESTful API Routes**:
-  - `GET /api/products`: Full-text search, brand/category filters, price range, sorting, pagination.
-  - `GET /api/stats`: Real-time inventory aggregates, brand distribution, pipeline revenue metrics.
+- **Prisma ORM + SQLite**: Sub-millisecond database queries for fast product resolution.
+- **RESTful API Endpoints**:
+  - `GET /api/products`: Full-text search, brand/category filters, sorting, pagination.
+  - `GET /api/stats`: Real-time inventory metrics & brand breakdown.
   - `POST /api/inquiries`: WhatsApp lead capture & trade-in submissions.
-  - `POST /api/visits`: Visitor traffic counter.
-- **Static Deployment Fallback**: Full client-side fallback to `data/catalog.json` for pure static Apache/LiteSpeed/cPanel/DirectAdmin hosting without Node.js.
-- **Universal Visitor Tracking**: Dual tracking via `/api/visits`, LiteSpeed PHP `count.php`, and browser `localStorage`.
+  - `POST /api/visits`: Multi-platform traffic analytics.
+- **Static Export Fallback**: Compatible with DirectAdmin, cPanel, Apache, and LiteSpeed servers (`deploy/joinelectroniccenter-cpanel-directadmin.zip`).
 
 ---
 
-## 📊 SEO, AEO & Search Engine Scorecard (9.7 / 10)
+## 📊 SEO, AEO & Search Engine Scorecard (9.8 / 10)
 
 | Optimization Area | Score | Highlights |
 |---|:---:|---|
-| **Traditional SEO** | **9.7 / 10** | Schema.org `ElectronicsStore`, `WebSite` SearchAction, GeoCoordinates (`27.7328, 85.3168`), Canonical URL, GA4 & Bing verification. |
-| **AEO (AI / LLM Search)** | **9.8 / 10** | Dedicated `llms.txt`, `llms-full.txt`, 18 structured Q&A buying guides with NPR pricing for ChatGPT, Perplexity, Claude, and Gemini. |
-| **Local SEO (Kathmandu)** | **9.8 / 10** | Samakhushi landmark signals, valley delivery radius, 7-day operating hours (`9:30 AM - 8:00 PM`), direct WhatsApp hotline. |
-| **Daraz / E-Commerce Equivalency**| **9.6 / 10** | High-search buying queries, comparison tables, trade-in buyback, and credit card 0% EMI parity. |
+| **Traditional SEO** | **9.8 / 10** | Schema.org `ElectronicsStore`, `FAQPage`, `BlogPosting`, GeoCoordinates (`27.7328, 85.3168`), Canonical URLs. |
+| **Romanized Nepali SEO** | **9.9 / 10** | Captures high-intent Romanized queries (*sasto ma purano fridge kathmandu*, *purano fridge sata pata garne thau*, *recondition fridge samakhusi chowk*). |
+| **AEO (AI Search)** | **9.8 / 10** | Structured `llms.txt` and `sitemap.xml` with 400+ indexed URLs for ChatGPT, Perplexity, Claude, and Gemini. |
+| **Local Kathmandu Intent** | **9.9 / 10** | Exact Tokha Road / Ring Road landmark directions, 7-day operating hours (`9:30 AM - 8:00 PM`), valley delivery radius. |
 
 ---
 

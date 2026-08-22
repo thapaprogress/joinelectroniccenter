@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Calculator, Percent, ShieldCheck, MessageCircle, Building2, CheckCircle2, Send } from "lucide-react";
+import { trackEvent } from "@/lib/track-client";
 
 const BANK_PARTNERS = [
   { id: "nabil", name: "Nabil Bank (0% Credit Card EMI)", tenureMax: 18 },
@@ -30,6 +31,12 @@ export function EmiCalculator() {
   const bankObj = BANK_PARTNERS.find((b) => b.id === selectedBank) || BANK_PARTNERS[0];
 
   const handleApply = async () => {
+    trackEvent("SubmitForm", {
+      form_type: "emi_application",
+      bank: bankObj.name,
+      value: financedAmount,
+      currency: "NPR",
+    });
     // Log lead to database for bank commission tracking
     if (customerPhone) {
       try {

@@ -28,6 +28,7 @@ Language: Nepali + English (bilingual service)
 - /warranty.html - Warranty, delivery and return policies
 
 ## Blog Posts
+- /blog/sasto-ma-purano-fridge-samakhusi-kathmandu - Sasto Ma Purano & Recondition Fridge Kathmandu (Samakhusi Chowk Exchange Offer 2026)
 - /blog.html?post=how-to-choose-a-refrigerator-in-nepal - How to choose a refrigerator in Nepal (size, energy, brands)
 - /blog.html?post=emi-on-appliances-in-nepal-explained - EMI on appliances in Nepal explained
 - /blog.html?post=old-tv-exchange-cashback-nepal - Old TV exchange cashback guide

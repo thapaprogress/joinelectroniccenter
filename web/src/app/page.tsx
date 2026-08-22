@@ -1,27 +1,58 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { BrandMarquee } from "@/components/BrandMarquee";
 import { TopPicksShowcase } from "@/components/TopPicksShowcase";
 import { SponsoredBanner } from "@/components/SponsoredBanner";
 import { CatalogSection } from "@/components/CatalogSection";
-import { RefurbishedSection } from "@/components/RefurbishedSection";
-import { ExchangeCalculator } from "@/components/ExchangeCalculator";
-import { EmiCalculator } from "@/components/EmiCalculator";
-import { BlogSection } from "@/components/BlogSection";
 import { SocialProof } from "@/components/SocialProof";
-import { SocialMediaFeed } from "@/components/SocialMediaFeed";
 import { LocationSection } from "@/components/LocationSection";
 import { Footer } from "@/components/Footer";
-import { ProductModal } from "@/components/ProductModal";
-import { SearchModal } from "@/components/SearchModal";
 import { FloatingActions } from "@/components/FloatingActions";
+import { Product } from "@/types/product";
+
+// Lazy-load heavy interactive modals and calculators for fast initial paint
+const ProductModal = dynamic(
+  () => import("@/components/ProductModal").then((mod) => mod.ProductModal),
+  { ssr: false }
+);
+
+const SearchModal = dynamic(
+  () => import("@/components/SearchModal").then((mod) => mod.SearchModal),
+  { ssr: false }
+);
+
+const ExchangeCalculator = dynamic(
+  () => import("@/components/ExchangeCalculator").then((mod) => mod.ExchangeCalculator),
+  { ssr: true }
+);
+
+const EmiCalculator = dynamic(
+  () => import("@/components/EmiCalculator").then((mod) => mod.EmiCalculator),
+  { ssr: true }
+);
+
+const RefurbishedSection = dynamic(
+  () => import("@/components/RefurbishedSection").then((mod) => mod.RefurbishedSection),
+  { ssr: true }
+);
+
+const BlogSection = dynamic(
+  () => import("@/components/BlogSection").then((mod) => mod.BlogSection),
+  { ssr: true }
+);
+
+const SocialMediaFeed = dynamic(
+  () => import("@/components/SocialMediaFeed").then((mod) => mod.SocialMediaFeed),
+  { ssr: false }
+);
 
 export default function Home() {
   const [selectedBrand, setSelectedBrand] = useState("");
-  const [selectedProduct, setSelectedProduct] = useState<any | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | any | null>(null);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   // Global Ctrl+K / slash key listener
@@ -30,7 +61,11 @@ export default function Home() {
       if ((e.ctrlKey || e.metaKey) && e.key === "k") {
         e.preventDefault();
         setIsSearchOpen((prev) => !prev);
-      } else if (e.key === "/" && document.activeElement?.tagName !== "INPUT" && document.activeElement?.tagName !== "TEXTAREA") {
+      } else if (
+        e.key === "/" &&
+        document.activeElement?.tagName !== "INPUT" &&
+        document.activeElement?.tagName !== "TEXTAREA"
+      ) {
         e.preventDefault();
         setIsSearchOpen(true);
       }
@@ -55,8 +90,8 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between selection:bg-blue-600 selection:text-white transition-colors duration-300">
-      {/* Navigation Header with Search & Day/Night Switcher */}
+    <main className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between selection:bg-blue-600 selection:text-white transition-colors duration-300 pb-16 sm:pb-0">
+      {/* Navigation Header with Search */}
       <Navbar
         onOpenExchange={scrollToExchange}
         onOpenEmi={scrollToEmi}
@@ -79,7 +114,7 @@ export default function Home() {
         }}
       />
 
-      {/* Best in Class Showcase (Best TV, Fridge, WM, AC, Cooler, De-fridger) */}
+      {/* Best in Class Showcase (Best TV, Fridge, WM, AC, Cooler) */}
       <TopPicksShowcase
         onSelectProduct={setSelectedProduct}
         onOpenExchange={scrollToExchange}
@@ -93,7 +128,7 @@ export default function Home() {
         }}
       />
 
-      {/* Live Inventory Catalog Section with Discount Badges */}
+      {/* Live Inventory Catalog Section */}
       <CatalogSection
         selectedBrand={selectedBrand}
         onSelectBrand={setSelectedBrand}
@@ -101,53 +136,58 @@ export default function Home() {
         onOpenExchange={scrollToExchange}
       />
 
-      {/* Certified Refurbished & Clearance Corner (High-Margin Flip) */}
+      {/* Certified Refurbished / Floor Deals */}
       <RefurbishedSection
         onOpenExchange={scrollToExchange}
       />
 
-      {/* 2026 Buying Guides & Price Lists Section */}
-      <BlogSection />
-
-      {/* Old TV & Fridge Trade-In / Exchange Section */}
+      {/* Interactive Old Appliance Exchange Valuation Calculator */}
       <ExchangeCalculator />
 
-      {/* Monthly Installment EMI & Bank Referral Calculator */}
+      {/* 0% Monthly EMI Installment Calculator */}
       <EmiCalculator />
 
-      {/* Social Proof & Customer Testimonials */}
+      {/* SEO & Buyer Knowledge Guides */}
+      <BlogSection />
+
+      {/* Social Proof & Customer Reviews */}
       <SocialProof />
 
-      {/* Live Social Media Posts & Channel Links (TikTok, Facebook, GMB) */}
+      {/* Live TikTok / Instagram Video Feed */}
       <SocialMediaFeed />
 
-      {/* Store Location, Hours & Map */}
+      {/* Showroom Google Maps & Store Details */}
       <LocationSection />
 
-      {/* Complete Footer */}
+      {/* Footer with SEO Sitemaps & Trust Badges */}
       <Footer />
 
-      {/* Global Instant Search Autocomplete Modal */}
-      <SearchModal
-        isOpen={isSearchOpen}
-        onClose={() => setIsSearchOpen(false)}
-        onSelectProduct={(p) => setSelectedProduct(p)}
-      />
-
-      {/* Product Detail Modal with Smart Add-On Upsells */}
-      {selectedProduct && (
-        <ProductModal
-          product={selectedProduct}
-          onClose={() => setSelectedProduct(null)}
-          onOpenExchange={() => {
-            setSelectedProduct(null);
-            scrollToExchange();
+      {/* Lazy Loaded Interactive Search Modal */}
+      {isSearchOpen && (
+        <SearchModal
+          isOpen={isSearchOpen}
+          onClose={() => setIsSearchOpen(false)}
+          onSelectProduct={(p) => {
+            setIsSearchOpen(false);
+            setSelectedProduct(p);
           }}
         />
       )}
 
-      {/* Persistent WhatsApp Hotline */}
-      <FloatingActions />
+      {/* Lazy Loaded Product Detail Modal */}
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+          onOpenExchange={scrollToExchange}
+        />
+      )}
+
+      {/* High-Conversion Floating Actions & Mobile Bottom Bar */}
+      <FloatingActions
+        onOpenSearch={() => setIsSearchOpen(true)}
+        onOpenExchange={scrollToExchange}
+      />
     </main>
   );
 }

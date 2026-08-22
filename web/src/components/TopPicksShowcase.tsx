@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { trackEvent } from "@/lib/track-client";
 import { 
   Trophy, 
   Tv, 
@@ -360,6 +361,7 @@ export function TopPicksShowcase({ onSelectProduct, onOpenExchange }: TopPicksSh
                   href={`https://wa.me/${whatsapp}?text=${encodeURIComponent(quickMsg)}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackEvent("Contact", { source: "top_picks" })}
                   className="w-full sm:w-auto px-6 py-3.5 rounded-xl font-extrabold text-sm text-white bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 transition shadow-lg shadow-emerald-950/40 flex items-center justify-center space-x-2 cursor-pointer"
                 >
                   <MessageCircle className="w-4 h-4" />

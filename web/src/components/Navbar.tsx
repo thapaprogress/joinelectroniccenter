@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { trackEvent } from "@/lib/track-client";
 import { 
   Phone, 
   MessageCircle, 
@@ -281,6 +282,7 @@ export function Navbar({ onOpenExchange, onOpenEmi, onScrollToCatalog, onOpenSea
               href={`https://wa.me/${whatsapp}?text=${encodeURIComponent("Namaste Join Electronic Center! I am browsing your appliance catalog and want to check pricing/exchange offer.")}`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent("Contact", { source: "navbar_whatsapp" })}
               className="px-3 sm:px-3.5 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center space-x-1.5 shadow-lg shadow-emerald-600/20 shrink-0"
             >
               <MessageCircle className="w-3.5 h-3.5" />

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
+import { trackEvent } from "@/lib/track-client";
 import { Search, Filter, RefreshCw, ShoppingBag, Eye, MessageCircle, SlidersHorizontal, Check, Star } from "lucide-react";
 
 interface CatalogSectionProps {
@@ -378,6 +379,15 @@ export function CatalogSection({
                       href={`https://wa.me/${whatsapp}?text=${encodeURIComponent(quickMsg)}`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() =>
+                        trackEvent("Contact", {
+                          source: "catalog_card",
+                          content_id: product.modelCode || product.id,
+                          content_name: product.name,
+                          value: product.mrpNpr || 0,
+                          currency: "NPR",
+                        })
+                      }
                       className="py-2.5 px-2 rounded-xl text-xs font-bold text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-950/30 flex items-center justify-center space-x-1.5 transition"
                     >
                       <MessageCircle className="w-3.5 h-3.5" />

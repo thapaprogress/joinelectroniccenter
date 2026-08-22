@@ -52,6 +52,7 @@ model Product {
   whatsapp         String   @default("9779851045662")
   metaTitle        String?
   metaDescription  String?
+  reviews          Review[]
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
 
@@ -59,6 +60,21 @@ model Product {
   @@index([categoryId])
   @@index([slug])
   @@index([mrpNpr])
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  authorName String
+  location   String   @default("Kathmandu")
+  rating     Int      @default(5)
+  title      String?
+  comment    String
+  verified   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+
+  @@index([productId])
 }
 
 model Inquiry {
@@ -82,4 +98,25 @@ model VisitLog {
   userAgent String?
   ipHash    String?
   timestamp DateTime @default(now())
+}
+
+model BlogPost {
+  id             String   @id @default(cuid())
+  slug           String   @unique
+  title          String
+  category       String   @default("Buying Guide")
+  author         String   @default("Join Electronic Center")
+  readMin        String   @default("5 min read")
+  summary        String
+  content        String?
+  image          String?
+  priceHighlight String?
+  keywords       String?  // JSON string array
+  published      Boolean  @default(true)
+  featured       Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([slug])
+  @@index([category])
 }

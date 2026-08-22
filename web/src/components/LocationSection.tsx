@@ -35,12 +35,17 @@ export function LocationSection() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-white text-base">Store Address</h3>
+                  <h3 className="font-extrabold text-white text-base">Store Address & Landmark</h3>
                   <p className="text-sm text-slate-300 mt-1">
                     Join Electronic Center<br />
-                    Samakhushi Chowk, Tokha Road, Kathmandu, Nepal
+                    Samakhusi Chowk, Tokha Road, Kathmandu, Nepal
                   </p>
-                  <p className="text-xs text-slate-400 mt-1">Near Ring Road bridge connection</p>
+                  <p className="text-xs text-amber-300/90 font-medium mt-1">
+                    📍 Exactly at Samakhusi Chowk — Just 2 mins from Ring Road Bridge (Tokha Road entrance)
+                  </p>
+                  <p className="text-[11px] text-slate-400 mt-1">
+                    Near: Gongabu, Balaju, Maharajgunj, Tokha, Dhapasi & Rani Bari
+                  </p>
                 </div>
               </div>
 

@@ -6,6 +6,7 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -22,6 +23,23 @@ export const metadata: Metadata = {
     "Join Electronic Center Kathmandu",
     "Samakhushi Chowk electronics shop",
     "electronics store near me Kathmandu",
+    // High-Intent Recondition & Used Appliance Keywords
+    "purano fridge samakhusi",
+    "second hand fridge kathmandu cheap price",
+    "recondition fridge samakhusi chowk",
+    "used fridge exchange kathmandu",
+    "purano samana phatke samakhusi",
+    "cheap recondition electronic shop near ring road",
+    // Nepali Roman Script Queries (How local buyers type online)
+    "sasto ma purano fridge kathmandu",
+    "purano fridge sata pata garne thau",
+    "samakhusi ma purano electronic dokan",
+    "single door used fridge sasto price",
+    "recondition fridge kinne thau ktm",
+    // Location & Category Intent
+    "home appliance exchange center samakhusi",
+    "electronic recondition shop near tokha road",
+    "second hand fridge shop ring road kathmandu",
     // Google & Daraz Nepal High-Search Buying Queries
     "Daraz electronics Nepal price compare",
     "TV price in Nepal 2026",
@@ -44,6 +62,15 @@ export const metadata: Metadata = {
     "Credit card installment home appliance Nepal",
     "Himstar home appliances official price list",
     "Free home delivery electronics Kathmandu Lalitpur Bhaktapur",
+    // Social & Viral Hashtags
+    "PuranoFridge",
+    "SecondHandFridgeNepal",
+    "SamakhusiElectronics",
+    "ReconditionFridgeKtm",
+    "SastoFridge",
+    "KathmanduSecondHand",
+    "ApplianceExchangeNepal",
+    "RingRoadElectronics",
   ],
   verification: {
     google: "eN_w_K_cmJ3DwzAIVwAXQ4dtziGlorjbp03BR3TeAYI",
@@ -184,6 +211,23 @@ export default function RootLayout({
             gtag('config', 'G-JYNYWLHKZJ');
           `}
         </Script>
+
+        {/* TikTok Pixel Code */}
+        <Script id="tiktok-pixel" strategy="afterInteractive">
+          {`
+            !function (w, d, t) {
+              w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+              ttq.load('DA42VCJC77U0QGTKHE8G');
+              ttq.page();
+            }(window, document, 'ttq');
+          `}
+        </Script>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://analytics.tiktok.com" />
+        <link rel="dns-prefetch" href="https://analytics.tiktok.com" />
         <meta name="google-site-verification" content="eN_w_K_cmJ3DwzAIVwAXQ4dtziGlorjbp03BR3TeAYI" />
         <meta name="msvalidate.01" content="132FD1EBFB4DC860368794F461320DB9" />
       </head>

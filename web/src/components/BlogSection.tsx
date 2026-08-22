@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
-import { BookOpen, ArrowRight, Clock, ShieldCheck, Tag, Sparkles } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { BookOpen, ArrowRight, Clock, Tag, Sparkles } from "lucide-react";
 
 interface BlogPost {
   slug: string;
@@ -16,6 +18,50 @@ interface BlogPost {
 }
 
 const FEATURED_POSTS: BlogPost[] = [
+  {
+    slug: "best-refrigerator-in-nepal-under-50000",
+    category: "Refrigerator Guide",
+    title: "Best Refrigerator in Nepal Under 50,000 (2026 Double Door & Single Door Top Picks)",
+    date: "Aug 21, 2026",
+    readMin: "7 min read",
+    summary: "Discover the top energy-efficient refrigerators under Rs 50,000 in Nepal from Samsung, Whirlpool, and Himstar. Digital inverter power savings and Kathmandu exchange offers.",
+    image: "/photos/Samsung/RT28C3022S8.webp",
+    priceHighlight: "Single Door from Rs 29,990 | Double Door from Rs 44,900",
+    keywords: ["Refrigerator price Nepal", "Best fridge under 50000", "Double door fridge Nepal"],
+  },
+  {
+    slug: "front-load-vs-top-load-washing-machine-nepal",
+    category: "Laundry Guide",
+    title: "Front Load vs Top Load Washing Machine in Nepal: Which Saves More Water & Power?",
+    date: "Aug 21, 2026",
+    readMin: "8 min read",
+    summary: "Complete comparison between front-load and top-load fully automatic washing machines for Kathmandu homes. Water pressure, steam wash, and 2026 price lists.",
+    image: "/photos/Samsung/WW80T504DAX.webp",
+    priceHighlight: "Top Load from Rs 34,900 | Front Load from Rs 54,900",
+    keywords: ["Front load washing machine Nepal", "Washing machine price Kathmandu"],
+  },
+  {
+    slug: "inverter-ac-price-in-nepal-2026-guide",
+    category: "AC Buying Guide",
+    title: "1.5 Ton Inverter AC Price in Nepal (2026 Guide): Electricity Units & Best Brands",
+    date: "Aug 21, 2026",
+    readMin: "7 min read",
+    summary: "Calculations on monthly electricity consumption for 1 Ton vs 1.5 Ton dual inverter ACs in Kathmandu. Copper condenser durability and free installation offers.",
+    image: "/photos/AURA/AU12FSWAC.webp",
+    priceHighlight: "1 Ton from Rs 48,000 | 1.5 Ton from Rs 64,500",
+    keywords: ["1.5 ton AC price Nepal", "Inverter AC Kathmandu", "Air conditioner 2026"],
+  },
+  {
+    slug: "how-to-exchange-old-tv-fridge-kathmandu",
+    category: "Exchange & Cashback",
+    title: "How to Exchange Old CRT/LED TV & Fridge in Kathmandu for Up to Rs 8,000 Cashback",
+    date: "Aug 21, 2026",
+    readMin: "5 min read",
+    summary: "Step-by-step guide to exchanging broken or working old televisions and refrigerators at Join Electronic Center with instant WhatsApp appraisal and doorstep collection.",
+    image: "/images/exchange-banner.webp",
+    priceHighlight: "Instant Cashback up to Rs 8,000",
+    keywords: ["Old TV exchange in Nepal cashback", "Old refrigerator exchange Kathmandu"],
+  },
   {
     slug: "tv-price-in-nepal-2026",
     category: "TV Buying Guide",
@@ -38,39 +84,6 @@ const FEATURED_POSTS: BlogPost[] = [
     priceHighlight: "Skyworth QLED Rs 84,900 | AURA WebOS Rs 69,990",
     keywords: ["Best 55 inch TV Nepal", "4K TV under 1 lakh", "Skyworth QLED"],
   },
-  {
-    slug: "refrigerator-price-nepal-2026",
-    category: "Refrigerator Guide",
-    title: "Refrigerator & Fridge Price in Nepal (2026): Single, Double Door & Side-by-Side Guide",
-    date: "Aug 15, 2026",
-    readMin: "8 min read",
-    summary: "Capacity guide for Nepali households from 170L to 700L. Inverter compressor power savings, 10-20 year warranties, and old fridge exchange cashback.",
-    image: "/photos/Himstar/HR-17D71.webp",
-    priceHighlight: "Single Door Rs 30,990 | Frost-Free Rs 54,900",
-    keywords: ["Fridge price in Nepal", "Double door refrigerator", "Himstar fridge"],
-  },
-  {
-    slug: "washing-machine-price-nepal-2026",
-    category: "Laundry Guide",
-    title: "Washing Machine Price in Nepal 2026: Semi-Auto, Top Load & Front Load Inverter Guide",
-    date: "Aug 15, 2026",
-    readMin: "6 min read",
-    summary: "Choosing between semi-automatic, top-loading, and front-loading washing machines. Digital Inverter motor longevity, steam hygiene, and water pressure requirements.",
-    image: "/photos/Samsung/WT70C3000RR.webp",
-    priceHighlight: "Semi-Auto Rs 25,990 | Front Load Steam Rs 55,500",
-    keywords: ["Washing machine price Nepal", "Front load washer", "Samsung washing machine"],
-  },
-  {
-    slug: "second-hand-tv-fridge-exchange-nepal",
-    category: "Trade-In & Offers",
-    title: "Old TV & Fridge Exchange in Kathmandu: Get Up to Rs 8,000 Instant Cashback Bonus",
-    date: "Aug 15, 2026",
-    readMin: "5 min read",
-    summary: "How Join Electronic Center's hassle-free trade-in works: send photos on WhatsApp, receive an instant appraisal, and upgrade to any brand-new appliance.",
-    image: "/photos/AURA/AU12FSWAC.webp",
-    priceHighlight: "Up to Rs 8,000 Exchange Bonus",
-    keywords: ["Appliance exchange Nepal", "Old TV trade in", "Kathmandu second hand exchange"],
-  },
 ];
 
 export function BlogSection() {
@@ -79,47 +92,45 @@ export function BlogSection() {
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/80 border border-blue-800/60 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <BookOpen className="w-3.5 h-3.5" />
-            2026 Appliance Buying & Price Guides
+          <div className="flex items-center space-x-2 text-blue-400 font-semibold text-xs uppercase tracking-wider mb-2">
+            <Sparkles className="w-4 h-4" />
+            <span>Smart Buying Advice</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Smart Buyer Guides & <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Official Price Lists</span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-100 tracking-tight">
+            Home Appliance Guides &amp; Nepal Price Lists (2026)
           </h2>
-          <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">
-            Researched buying guides with real verified NPR prices, brand warranty terms, energy efficiency ratings, and expert recommendations for Kathmandu Valley buyers.
+          <p className="text-slate-400 text-sm mt-1 max-w-2xl">
+            Read verified comparison benchmarks, electricity consumption math, and exchange cashback guides written by our Kathmandu showroom specialists.
           </p>
         </div>
-        <a
-          href="/blog.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-sm font-semibold border border-slate-700 transition-all shrink-0 self-start md:self-auto"
+
+        <Link
+          href="/blog"
+          className="inline-flex items-center space-x-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition shrink-0 group"
         >
-          View All 18 Articles <ArrowRight className="w-4 h-4 text-blue-400" />
-        </a>
+          <BookOpen className="w-4 h-4" />
+          <span>View All 22+ Buying Guides</span>
+          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </Link>
       </div>
 
       {/* Featured Articles Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {FEATURED_POSTS.map((post, idx) => (
-          <a
+        {FEATURED_POSTS.map((post) => (
+          <Link
             key={post.slug}
-            href={`/blog.html?post=${post.slug}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`/blog/${post.slug}`}
             className="group flex flex-col justify-between bg-slate-900/80 hover:bg-slate-850 border border-slate-800 hover:border-blue-500/50 rounded-2xl p-5 shadow-xl hover:shadow-blue-500/10 transition-all duration-300 transform hover:-translate-y-1"
           >
             <div>
               {/* Image & Category Pill */}
               <div className="relative w-full h-48 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 mb-4">
-                <img
-                  src={post.image}
+                <Image
+                  src={post.image || "/images/hero-showroom.webp"}
                   alt={post.title}
-                  className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
-                  onError={(e: any) => {
-                    e.target.src = "/photos/AURA/AU12FSWAC.webp";
-                  }}
+                  fill
+                  className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute top-3 left-3 bg-blue-600/90 backdrop-blur-md text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow">
                   {post.category}
@@ -168,7 +179,7 @@ export function BlogSection() {
                 Read Guide <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
               </span>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>

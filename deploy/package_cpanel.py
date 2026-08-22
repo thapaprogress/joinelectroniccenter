@@ -1,7 +1,15 @@
 import os
+import shutil
 import zipfile
 
 source_dir = r"D:\Antigravity Project\store-catalog\web\out"
+images_src = r"D:\Antigravity Project\store-catalog\web\public\images"
+images_dst = os.path.join(source_dir, "images")
+
+if os.path.exists(images_src):
+    print(f"Syncing images from {images_src} to {images_dst}...")
+    shutil.copytree(images_src, images_dst, dirs_exist_ok=True)
+
 output_zip = r"D:\Antigravity Project\store-catalog\deploy\joinelectroniccenter-cpanel-directadmin.zip"
 
 print(f"Packaging {source_dir} into {output_zip} with standard Linux POSIX forward-slash paths...")

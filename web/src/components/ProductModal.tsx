@@ -1,19 +1,20 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { 
-  X, 
-  MessageCircle, 
-  Phone, 
-  ShieldCheck, 
-  Truck, 
-  RefreshCw, 
-  CheckCircle2, 
-  PlusCircle, 
+import {
+  X,
+  MessageCircle,
+  Phone,
+  ShieldCheck,
+  Truck,
+  RefreshCw,
+  CheckCircle2,
+  PlusCircle,
   Sparkles,
   Check
 } from "lucide-react";
+import { trackEvent } from "@/lib/track-client";
 
 interface ProductModalProps {
   product: any | null;
@@ -22,9 +23,23 @@ interface ProductModalProps {
 }
 
 export function ProductModal({ product, onClose, onOpenExchange }: ProductModalProps) {
-  if (!product) return null;
-
   const [selectedAddons, setSelectedAddons] = useState<string[]>([]);
+
+  useEffect(() => {
+    if (product) {
+      trackEvent("ViewContent", {
+        content_id: product.modelCode || product.id,
+        content_name: product.name,
+        content_type: "product",
+        value: product.mrpNpr || 0,
+        currency: "NPR",
+      });
+    }
+    // fire once per opened product, not on unrelated product field updates
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product?.id]);
+
+  if (!product) return null;
 
   const whatsapp = product.whatsapp || "9779851045662";
   const phone = "9851045662";
@@ -235,12 +250,29 @@ Please confirm availability and delivery time for Kathmandu Valley!`;
               </div>
             </div>
 
-            {/* CTAs */}
+            {/* Dedicated Page Link & CTAs */}
             <div className="space-y-2 pt-2 border-t border-slate-800">
+              <div className="flex items-center justify-between text-xs pb-1">
+                <a
+                  href={`/product/${product.slug || product.modelCode}`}
+                  className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Open Dedicated Product Page &amp; Reviews →</span>
+                </a>
+              </div>
+
               <a
                 href={`https://wa.me/${whatsapp}?text=${encodeURIComponent(whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent("Contact", {
+                    content_id: product.modelCode || product.id,
+                    content_name: product.name,
+                    value: grandTotal,
+                    currency: "NPR",
+                  })
+                }
                 className="w-full py-3 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 transition shadow-lg shadow-emerald-950/40 flex items-center justify-center space-x-2 cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />

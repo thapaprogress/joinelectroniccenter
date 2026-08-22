@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { ArrowRight, RefreshCw, ShieldCheck, Truck, Percent, Star, CheckCircle2, MessageCircle } from "lucide-react";
+import { trackEvent } from "@/lib/track-client";
 
 interface HeroProps {
   onScrollToCatalog: () => void;
@@ -133,6 +134,7 @@ export function Hero({ onScrollToCatalog, onOpenExchange }: HeroProps) {
                     href={`https://wa.me/${whatsapp}?text=${encodeURIComponent("Namaste Join Electronic! I have an old TV / appliance I want to exchange. Please give me an exchange quote.")}`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackEvent("Contact", { source: "hero_exchange_quote" })}
                     className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-500 hover:to-green-500 text-white font-bold text-sm flex items-center justify-center space-x-2 transition shadow-md shadow-emerald-950/40"
                   >
                     <MessageCircle className="w-4 h-4" />

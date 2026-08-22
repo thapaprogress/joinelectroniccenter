@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { Search, X, Tag, ArrowRight, Zap, Sparkles } from "lucide-react";
+import { trackEvent } from "@/lib/track-client";
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -85,6 +86,11 @@ export function SearchModal({ isOpen, onClose, onSelectProduct }: SearchModalPro
     }).slice(0, 8);
 
     setResults(matches);
+
+    const timer = setTimeout(() => {
+      trackEvent("Search", { search_string: query.trim(), results_count: matches.length });
+    }, 700);
+    return () => clearTimeout(timer);
   }, [query, catalog]);
 
   if (!isOpen) return null;

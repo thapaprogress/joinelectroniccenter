@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { RefreshCw, CheckCircle2, MessageCircle, ArrowRight, Sparkles, AlertCircle } from "lucide-react";
+import { trackEvent } from "@/lib/track-client";
 
 export function ExchangeCalculator() {
   const [category, setCategory] = useState<"tv" | "fridge" | "wm" | "ac">("tv");
@@ -41,12 +42,21 @@ export function ExchangeCalculator() {
   const whatsapp = "9779851045662";
 
   const handleWhatsAppClaim = async () => {
-    const text = `Namaste Join Electronic Center! I used your Old Appliance Exchange Calculator on your website. 
-Category: ${category.toUpperCase()}
-Old Model Type: ${itemType}
-Condition: ${condition}
-Estimated Value: Rs ${estimatedCashback.toLocaleString("en-NP")}
-I want to exchange it for a new appliance. Please advise on pickup!`;
+    trackEvent("SubmitForm", {
+      form_type: "exchange_claim",
+      category,
+      condition,
+      value: estimatedCashback,
+      currency: "NPR",
+    });
+    const text = `Namaste Join Electronic Center (Samakhusi Chowk)! 
+Malai purano saman exchange (sata pata) garera naya wa recondition appliance linu chha.
+- Category: ${category.toUpperCase()}
+- Old Model: ${itemType}
+- Condition: ${condition}
+- Estimated Exchange Cashback: Rs ${estimatedCashback.toLocaleString("en-NP")}
+
+Purano device ko photo pathaudai chhu, please valuation confirm garera pickup process bataidinus.`;
 
     // Save lead to database silently
     if (customerPhone) {

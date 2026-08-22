@@ -1,5 +1,87 @@
 [
   {
+    "slug": "test-crud-live-guide",
+    "category": "Buying Guide",
+    "title": "Live CRUD Test Buying Guide",
+    "summary": "Verified live creation in Admin Dashboard.",
+    "content": "This is a live test article body.",
+    "priceHighlight": "Rs 25,000",
+    "keywords": [
+      "test",
+      "live"
+    ],
+    "readMin": "4 min read",
+    "date": "Aug 21, 2026"
+  },
+  {
+    "slug": "how-to-exchange-old-tv-fridge-kathmandu",
+    "category": "Exchange & Cashback",
+    "title": "How to Exchange Old CRT/LED TV & Fridge in Kathmandu for Up to Rs 8,000 Cashback",
+    "date": "Aug 21, 2026",
+    "readMin": "5 min read",
+    "summary": "Step-by-step guide to exchanging broken, damaged, or working old televisions and refrigerators at Join Electronic Center Kathmandu with instant WhatsApp appraisal and free doorstep collection.",
+    "image": "/images/exchange-banner.webp",
+    "priceHighlight": "Instant Trade-In Cashback up to Rs 8,000",
+    "keywords": [
+      "Old TV exchange in Nepal cashback",
+      "Old refrigerator exchange Kathmandu",
+      "Used appliance buyback Nepal",
+      "Second hand electronics trade in"
+    ],
+    "content": "3-step appraisal process for old CRT/LED TVs and refrigerators in Kathmandu Valley..."
+  },
+  {
+    "slug": "inverter-ac-price-in-nepal-2026-guide",
+    "category": "AC Buying Guide",
+    "title": "1.5 Ton Inverter AC Price in Nepal (2026 Guide): Electricity Units & Best Brands",
+    "date": "Aug 21, 2026",
+    "readMin": "7 min read",
+    "summary": "Calculations on monthly electricity consumption for 1 Ton vs 1.5 Ton dual inverter ACs in Kathmandu. Copper condenser durability, heating & cooling capabilities, and free installation offers.",
+    "image": "/photos/AURA/AU12FSWAC.webp",
+    "priceHighlight": "1 Ton from Rs 48,000 | 1.5 Ton from Rs 64,500",
+    "keywords": [
+      "1.5 ton AC price Nepal",
+      "Inverter AC Kathmandu",
+      "Air conditioner price list 2026",
+      "AURA split AC Nepal"
+    ],
+    "content": "1.0 Ton vs 1.5 Ton sizing and monthly electricity calculations for Nepal..."
+  },
+  {
+    "slug": "front-load-vs-top-load-washing-machine-nepal",
+    "category": "Laundry Buying Guide",
+    "title": "Front Load vs Top Load Washing Machine in Nepal: Which Saves More Water & Power?",
+    "date": "Aug 21, 2026",
+    "readMin": "8 min read",
+    "summary": "Complete comparison between front-load and top-load fully automatic washing machines for Kathmandu homes. Water pressure requirements, hot steam wash, electricity units, and 2026 Nepal price lists.",
+    "image": "/photos/Samsung/WW80T504DAX.webp",
+    "priceHighlight": "Top Load from Rs 34,900 | Front Load from Rs 54,900",
+    "keywords": [
+      "Front load washing machine Nepal",
+      "Washing machine price Kathmandu",
+      "Top load vs front load Nepal",
+      "Samsung EcoBubble"
+    ],
+    "content": "Water consumption and power usage analysis for Kathmandu washing machines..."
+  },
+  {
+    "slug": "best-refrigerator-in-nepal-under-50000",
+    "category": "Refrigerator Buying Guide",
+    "title": "Best Refrigerator in Nepal Under 50,000 (2026 Double Door & Single Door Top Picks)",
+    "date": "Aug 21, 2026",
+    "readMin": "7 min read",
+    "summary": "Discover the top energy-efficient refrigerators under Rs 50,000 in Nepal from Samsung, Whirlpool, and Himstar. Digital inverter power savings, stabilizer-free operation, and Kathmandu showroom exchange offers.",
+    "image": "/photos/Samsung/RT28C3022S8.webp",
+    "priceHighlight": "Single Door from Rs 29,990 | Double Door from Rs 44,900",
+    "keywords": [
+      "Refrigerator price in Nepal 2026",
+      "Best fridge under 50000",
+      "Double door fridge Nepal",
+      "Samsung digital inverter fridge"
+    ],
+    "content": "Detailed buying advice for 190L to 253L frost-free and direct-cool refrigerators in Kathmandu..."
+  },
+  {
     "slug": "how-to-choose-a-refrigerator-in-nepal",
     "title": "How to Choose a Refrigerator in Nepal: Size, Energy, Brands & Price Guide",
     "category": "Buying Guide",

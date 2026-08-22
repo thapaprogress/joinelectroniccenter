@@ -59,16 +59,43 @@ const SOCIAL_PLATFORMS = [
 
 const SOCIAL_POSTS = [
   {
-    id: "fb-1",
+    id: "recondition-viral-1",
+    platform: "TikTok",
+    iconBg: "bg-rose-600",
+    date: "August 2026",
+    tag: "🔥 Sasto Purano Fridge",
+    title: "Sasto Ma Purano Fridge & Recondition Showroom Tour at Samakhusi",
+    body: "Kathmandu ma sasto ma purano fridge khojdai hunuhunchha? Join Electronic Center (Samakhusi Chowk) ma certified single door & double door reconditioned refrigerators starting at Rs. 11,500! 100% gas pressure tested, 30-day warranty, ra purano fridge exchange ma up to Rs. 8,000 cashback.",
+    url: "https://www.tiktok.com/@joinelectronicscentre",
+    ctaText: "Watch on TikTok",
+    metrics: "24.8K Views • 1.9K Likes • 240 Shares",
+    hashtags: "#PuranoFridge #SecondHandFridgeNepal #SamakhusiElectronics #ReconditionFridgeKtm #SastoFridge #KathmanduSecondHand #ApplianceExchangeNepal #RingRoadElectronics",
+  },
+  {
+    id: "fb-recondition-1",
     platform: "Facebook",
     iconBg: "bg-blue-600",
     date: "August 2026",
-    tag: "🔥 Hot Deal Offer",
-    title: "Brand New Washing Machines from Rs 17,000!",
-    body: "Brand new, heavy-duty, energy efficient and super easy to operate — perfect for daily family and village use. 100% genuine brand warranty + free local delivery. Call or WhatsApp our Samakhushi showroom directly: 9851045662.",
+    tag: "♻️ Exchange & Recondition Offer",
+    title: "Purano Samana Sata Pata (Exchange Offer) — Instant Cash Discount",
+    body: "Bring your old CRT/Smart TV, old Single/Double door refrigerator, or washing machine to our Samakhusi Chowk showroom. Get instant evaluation from Rs 2,000 to Rs 8,000 cashback applied directly to your new or recondition purchase. Free Valley doorstep pickup available!",
     url: "https://www.facebook.com/joinelectroniccenter",
     ctaText: "View on Facebook",
-    metrics: "142 Likes • 28 Comments • 19 Shares",
+    metrics: "310 Likes • 64 Comments • 45 Shares",
+    hashtags: "#ApplianceExchangeNepal #SamakhusiElectronics #PuranoFridge #RingRoadElectronics",
+  },
+  {
+    id: "gmb-1",
+    platform: "Google Business (GMB)",
+    iconBg: "bg-amber-600",
+    date: "August 2026",
+    tag: "📍 Verified Local Store",
+    title: "Serving Kathmandu for 20+ Years — Near Tokha Road & Ring Road",
+    body: "Join Electronic Center at Samakhushi Chowk, Tokha Road is open 7 days a week (9:30 AM – 8:00 PM). Shop 378+ verified smart appliances with official brand warranties, 0% EMI installments, and certified recondition units.",
+    url: "https://maps.google.com/?q=Join+Electronic+Center+Samakhushi+Kathmandu",
+    ctaText: "View on Google Maps",
+    metrics: "4.9 ★ Rating • 250+ Customer Reviews",
+    hashtags: "#SamakhusiElectronics #KathmanduSecondHand",
   },
   {
     id: "tiktok-1",
@@ -81,30 +108,7 @@ const SOCIAL_POSTS = [
     url: "https://www.tiktok.com/@joinelectronicscentre",
     ctaText: "Watch on TikTok",
     metrics: "12.4K Views • 850 Likes • 94 Shares",
-  },
-  {
-    id: "gmb-1",
-    platform: "Google Business (GMB)",
-    iconBg: "bg-amber-600",
-    date: "August 2026",
-    tag: "📍 Verified Store Update",
-    title: "Serving Kathmandu for 20+ Years — Old TV & Fridge Trade-In Festival",
-    body: "Join Electronic Center at Samakhushi Chowk, Tokha Road is open 7 days a week (9:30 AM – 8:00 PM). Exchange any old CRT/LED television or refrigerator for up to Rs 8,000 instant cashback bonus with free doorstep collection inside Kathmandu Valley.",
-    url: "https://maps.google.com/?q=Join+Electronic+Center+Samakhushi+Kathmandu",
-    ctaText: "View on Google Maps",
-    metrics: "4.9 ★ Rating • 250+ Customer Reviews",
-  },
-  {
-    id: "fb-2",
-    platform: "Facebook",
-    iconBg: "bg-blue-600",
-    date: "August 2026",
-    tag: "🚚 Delivery & Service",
-    title: "Free Doorstep Delivery & Setup Across Kathmandu, Lalitpur & Bhaktapur",
-    body: "Order any 4K OLED Smart TV, Frost-Free Refrigerator, or Inverter AC. Our expert technical team delivers, unboxes, and tests your appliance on the same day. Payment via Cash, eSewa, Khalti, or Easy Card EMI.",
-    url: "https://www.facebook.com/joinelectroniccenter",
-    ctaText: "Share Post",
-    metrics: "98 Likes • 14 Comments • 11 Shares",
+    hashtags: "#ReconditionFridgeKtm #SastoFridge",
   },
 ];
 
@@ -251,6 +255,85 @@ export function SocialMediaFeed() {
 
             </div>
           ))}
+        </div>
+
+        {/* Strategy Toolkit for Social Bios & Hamrobazaar Listings */}
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl glass-panel border border-slate-800 bg-slate-900/60 space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+            <div>
+              <span className="text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-md">
+                Local Organic Reach Toolkit
+              </span>
+              <h3 className="text-xl font-black text-white mt-1">
+                Social Bio, Viral Hashtags & Hamrobazaar Copy Templates
+              </h3>
+            </div>
+            <span className="text-xs text-slate-400">Capture local Kathmandu & Ring Road buyers</span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            {/* 1. Social Bio Card */}
+            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2.5 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-blue-400 uppercase tracking-wide">1. Optimized Social Bio</span>
+                <p className="text-[11px] text-slate-400">Set for Facebook Page, TikTok Bio & Instagram Profile:</p>
+                <div className="p-3 mt-2 rounded-xl bg-slate-900 border border-slate-800 font-mono text-xs text-amber-300 select-all">
+                  "Recondition & New Home Appliances in Samakhusi | Exchange Available"
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText("Recondition & New Home Appliances in Samakhusi | Exchange Available");
+                  alert("Copied Social Bio to clipboard!");
+                }}
+                className="w-full py-2 rounded-xl bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 border border-blue-500/30 text-xs font-bold transition cursor-pointer"
+              >
+                Copy Social Bio
+              </button>
+            </div>
+
+            {/* 2. Viral Hashtags Card */}
+            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2.5 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-rose-400 uppercase tracking-wide">2. Algorithm Hashtag Set</span>
+                <p className="text-[11px] text-slate-400">Add to TikTok reels, Facebook reels & YouTube shorts:</p>
+                <div className="p-3 mt-2 rounded-xl bg-slate-900 border border-slate-800 font-mono text-[11px] text-rose-300 select-all leading-relaxed">
+                  #PuranoFridge #SecondHandFridgeNepal #SamakhusiElectronics #ReconditionFridgeKtm #SastoFridge #KathmanduSecondHand #ApplianceExchangeNepal #RingRoadElectronics
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  navigator.clipboard.writeText("#PuranoFridge #SecondHandFridgeNepal #SamakhusiElectronics #ReconditionFridgeKtm #SastoFridge #KathmanduSecondHand #ApplianceExchangeNepal #RingRoadElectronics");
+                  alert("Copied Hashtag Set to clipboard!");
+                }}
+                className="w-full py-2 rounded-xl bg-rose-600/20 hover:bg-rose-600/30 text-rose-300 border border-rose-500/30 text-xs font-bold transition cursor-pointer"
+              >
+                Copy Hashtag Set
+              </button>
+            </div>
+
+            {/* 3. Hamrobazaar Copy Card */}
+            <div className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2.5 flex flex-col justify-between">
+              <div>
+                <span className="text-xs font-bold text-emerald-400 uppercase tracking-wide">3. Hamrobazaar Listing Template</span>
+                <p className="text-[11px] text-slate-400">Tag under Samakhusi / Tokha Location:</p>
+                <div className="p-3 mt-2 rounded-xl bg-slate-900 border border-slate-800 font-mono text-[11px] text-emerald-300 select-all leading-relaxed">
+                  <strong>Title:</strong> Recondition Single/Double Door Fridge - Exchange Available (Samakhusi)<br />
+                  <strong>Location:</strong> Samakhusi Chowk, Tokha Road (Near Ring Road)
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  const adText = `Title: Recondition Single/Double Door Fridge - Exchange Available (Samakhusi)\nLocation: Samakhusi Chowk, Tokha Road, Kathmandu\nPrice: Starting Rs 11,500 (Old Fridge Exchange up to Rs 8,000)\nContact: 9851045662 / 9765985999\nDetails: Certified 100% cooling tested single/double door refrigerators with 30-day testing warranty & free delivery.\nTags: #PuranoFridge #SecondHandFridgeNepal #SamakhusiElectronics #ReconditionFridgeKtm #SastoFridge #KathmanduSecondHand #ApplianceExchangeNepal #RingRoadElectronics`;
+                  navigator.clipboard.writeText(adText);
+                  alert("Copied Hamrobazaar Listing Template to clipboard!");
+                }}
+                className="w-full py-2 rounded-xl bg-emerald-600/20 hover:bg-emerald-600/30 text-emerald-300 border border-emerald-500/30 text-xs font-bold transition cursor-pointer"
+              >
+                Copy Hamrobazaar Template
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
