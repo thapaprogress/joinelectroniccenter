@@ -2,18 +2,15 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { prisma } from "@/lib/prisma";
+import { getAllBlogs } from "@/lib/blogs";
 
 export async function GET() {
   try {
-    const jsonPath = path.join(process.cwd(), "public", "blog", "blog.json");
-    if (fs.existsSync(jsonPath)) {
-      const data = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
-      return NextResponse.json({ success: true, blogs: data });
-    }
+    const blogs = await getAllBlogs();
+    return NextResponse.json({ success: true, blogs });
   } catch (err: any) {
     return NextResponse.json({ success: false, error: err.message }, { status: 500 });
   }
-  return NextResponse.json({ success: true, blogs: [] });
 }
 
 export async function POST(req: Request) {
